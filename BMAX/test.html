@@ -23,21 +23,100 @@
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <script>
+
+    </script>
 </head>
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
-
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
-        <!-- Left navbar links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
-            </li>
-        </ul>
-    </nav>
-
-</div>
+<section class="sidebar" style="height: 899px; overflow: hidden; width: auto;">
+    <ul class="sidebar-menu" id="_frame_left_menu">
+        <li class="header" style="text-align: center;color: #eee;">功能菜单</li>
+        <li class="treeview">
+            <a class="animated">
+                <i class="fa fa-exclamation-triangle"></i>
+                <span>报警管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Alarm/Alarm/Index" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Alarm/Alarm/History" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a class="animated">
+                <i class="fa fa-users"></i>
+                <span>角色管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/Role/Role/Index" pagetitle="用户角色"><i class="fa fa-circle-thin"></i> 用户角色</a></li>
+                <li><a frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/Role/SystemMonitoringRole/Index" pagetitle="系统监控角色"><i class="fa fa-circle-thin"></i> 系统监控角色</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/User/User/Index" pagetitle="用户管理" class="animated">
+                <i class="fa fa-user"></i>
+                <span>用户管理</span>
+            </a>
+        </li>
+        <li class="treeview">
+            <a class="animated">
+                <i class="fa fa-cubes"></i>
+                <span>模式管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Task/Calendar/Index" pagetitle="模式运行"><i class="fa fa-circle-thin"></i> 模式运行</a></li>
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Task/Model/Index" pagetitle="模式配置"><i class="fa fa-circle-thin"></i> 模式配置</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a class="animated">
+                <i class="fa fa-pencil-square-o"></i>
+                <span>运行日志</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/Log/OperationLog/Index" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/SystemLog/SystemLog/Index" pagetitle="系统运行日志"><i class="fa fa-circle-thin"></i> 系统运行日志</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a class="animated">
+                <i class="fa fa-bar-chart"></i>
+                <span>报表查询</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Report/HistoryReport/Index" pagetitle="历史报表"><i class="fa fa-circle-thin"></i> 历史报表</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a class="animated">
+                <i class="fa fa-gears"></i>
+                <span>系统配置</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/Project/Project/EditProject" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Task/Linkage/ActionIndex" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
+                <li><a frame_href="BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BMAX/Home/FramePage?FrameUrl=/BMAX/Task/Linkage/CameraLinkageIndex" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
 </body>
 </html>
 
