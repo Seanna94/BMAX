@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>首页</title>
-    <script type="text/javascript" src="js/index.js"></script>
     <!-- jQuery 2.2.0 -->
     <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
     <!-- Bootstrap 3.3.6 -->
@@ -20,15 +19,16 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link href="https://cdn.bootcss.com/animate.css/3.3.1/animate.min.css" rel="stylesheet">
     <link rel="text/javascript" href="plugins/jQuery/jquery.js">
-
-    <script type="text/javascript">
+    <!--<script type="text/javascript" src="js/index.js"></script>-->
+    <script>
         function big(x){
-        x.style.fontSize="16px";
-    }
-    function normal(x){
-        x.style.fontSize="14px";
-    }
+            x.style.fontSize="16px";
+        }
+        function normal(x){
+            x.style.fontSize="14px";
+        }
     </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -39,13 +39,13 @@
     </a>
     <nav class="navbar">
         <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
-        <a href="#" class="sidebar-toggle">
+        <a href="#" class="sidebar-toggle"onmousemove="big(this)" onmouseout="normal(this)">
             <span class="sr-only">Toggle navigation</span>
         </a>
 
         <div class=   <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
             <ul class="nav navbar-nav topmenu">
-                <li style=""><a class="animated">系统监控</a></li>
+                <li><a class="animated"onmousemove="big(this)" onmouseout="normal(this)">系统监控</a></li>
             </ul>
         </div>
         <div class="navbar-custom-menu">
@@ -107,9 +107,9 @@
 
 <aside class="main-sidebar">
     <section class="sidebar" style="height: 849px; overflow: hidden; width: auto;">
-        <ul class="sidebar-menu"  id="_frame_left_menu">
+        <ul class="sidebar-menu" id="_frame_left_menu">
             <li style="  text-align: center;color: #eee;"><a><i class="header"></i> <span>功能菜单</span></a></li>
-            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+            <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
                     <i class="fa fa-exclamation-triangle"></i>
                     <span>报警管理</span>

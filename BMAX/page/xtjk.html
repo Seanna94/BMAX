@@ -23,6 +23,7 @@
     <script src="../js/ssbj.js" rel="stylesheet"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+
 <header class="main-header" id="_layout_header">
     <a href="/BMAX/Home/Index_MainFrameTab" class="logo">
         <span class="logo-mini"><b>B</b>P</span>
@@ -30,12 +31,12 @@
     </a>
     <nav class="navbar">
         <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
-        <a href="#" class="sidebar-toggle">
+        <a href="#" class="sidebar-toggle"onmousemove="big(this)" onmouseout="normal(this)">
             <span class="sr-only">Toggle navigation</span>
         </a>
         <div class=   <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
             <ul class="nav navbar-nav topmenu">
-                <li style=""><a class="animated">系统监控</a></li>
+                <li style=""><a class="animated"onmousemove="big(this)" onmouseout="normal(this)">系统监控</a></li>
             </ul>
         </div>
         </div>
@@ -47,7 +48,7 @@
                 </li>
 
                 <li>
-                    <a id="link_project" title="XX项目">XX项目 </a>
+                    <a id="link_project" title="XX项目"onmousemove="big(this)" onmouseout="normal(this)">XX项目 </a>
                 </li>
 
                 <li class="dropdown notifications-menu" style="" id="_layout_alarm_notification">
@@ -97,33 +98,41 @@
 <aside class="main-sidebar">
     <section class="sidebar" style="height: 849px; overflow: hidden; width: auto;">
         <ul class="sidebar-menu"  id="_frame_left_menu">
-            <li style="  text-align: center;color: #eee;"><a><i class="header"></i> <span>功能菜单</span></a></li>
+            <li style="  text-align: center;color: #eee;"><a><i class="header"></i> <span>系统监控</span></a></li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
-                    <i class="fa fa-exclamation-triangle"></i>
+                    <i class="fa fa-fire"></i>
                     <span>消防火灾</span>
                     <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-angle-left pull-right">
+                    </i>
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="消防火灾报警"><i class="fa fa-angle-right"></i>消防火灾报警</a></li>
+                    <li><a frame_href="#" pagetitle="消防火灾报警"><i class="fa fa-arrow-right"></i>消防火灾报警</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
-                    <i class="fa fa-users"></i>
+                    <i class="fa fa-building"></i>
                     <span>楼宇自控</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="送排风"><i class="fa fa-angle-right"></i>送排风</a>
+                    <li><a frame_href="#" pagetitle="送排风"><i class="fa fa-arrow-right"></i>送排风
+                        <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                    </a>
                         <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-right"></i>1号楼</a>
+                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼
+                                <span class="pull-right-container">
+                             <i class="fa fa-angle-left pull-right"></i>
+                    </span></a>
                                 <ul class="treeview-menu">
-                                    <li><a frame_href="#" pagetitle="B2F-1"><i class="fa fa-angle-right"></i>B2F-1</a>
+                                    <li><a frame_href="#" pagetitle="B2F-1"><i class="fa  fa-angle-right"></i>B2F-1</a>
                                     <li><a frame_href="#" pagetitle="B2F-2"><i class="fa fa-angle-right"></i>B2F-2</a></li>
                                     <li><a frame_href="#" pagetitle="B1F-1"><i class="fa fa-angle-right"></i>B1F-1</a></li>
                                     <li><a frame_href="#" pagetitle="B1F-2"><i class="fa fa-angle-right"></i>B1F-2</a></li>
@@ -141,7 +150,11 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-right"></i>2号楼</a>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
                                 <ul class="treeview-menu">
                                     <li><a frame_href="#" pagetitle="B2F-1"><i class="fa fa-angle-right"></i>B2F-1</a>
                                     <li><a frame_href="#" pagetitle="B2F-2"><i class="fa fa-angle-right"></i>B2F-2</a></li>
@@ -156,7 +169,11 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-right"></i>3号楼</a>
+                            <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-double-right"></i>3号楼
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
                                 <ul class="treeview-menu">
                                     <li><a frame_href="#" pagetitle="B2F"><i class="fa fa-angle-right"></i>B2F</a>
                                     <li><a frame_href="#" pagetitle="B1F"><i class="fa fa-angle-right"></i>B1F</a></li>
@@ -170,7 +187,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a frame_href="#" pagetitle="集水坑"><i class="fa fa-angle-right"></i>集水坑</a>
+                    <li><a frame_href="#" pagetitle="集水坑"><i class="fa fa-arrow-right"></i>集水坑
+                        <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                    </a>
                         <ul class="treeview-menu">
                             <li><a frame_href="#" pagetitle="1号楼B1F集水坑"><i class="fa fa-angle-right"></i>1号楼B1F集水坑</a>
                             <li><a frame_href="#" pagetitle="1号楼B2F南北区-1"><i class="fa fa-angle-right"></i>1号楼B2F南北区-1</a></li>
@@ -182,73 +203,81 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a frame_href="#" pagetitle="能源站送排风系统"><i class="fa fa-angle-right"></i>能源站送排风系统</a></li>
-                    <li><a frame_href="#" pagetitle="能源站集水坑"><i class="fa fa-angle-right"></i>能源站集水坑</a></li>
-                    <li><a frame_href="#" pagetitle="室内CO2浓度"><i class="fa fa-angle-right"></i>室内CO2浓度</a></li>
-                    <li><a frame_href="#" pagetitle="室内温湿度"><i class="fa fa-angle-right"></i>室内温湿度</a></li>
-                    <li><a frame_href="#" pagetitle="地下车库CO浓度"><i class="fa fa-angle-right"></i>地下车库CO浓度</a></li>
-                    <li><a frame_href="#" pagetitle="空气质量"><i class="fa fa-angle-right"></i>空气质量</a></li>
-                    <li><a frame_href="#" pagetitle="热风幕"><i class="fa fa-angle-right"></i>热风幕</a></li>
+                    <li><a frame_href="#" pagetitle="能源站送排风系统"><i class="fa fa-arrow-right"></i>能源站送排风系统</a></li>
+                    <li><a frame_href="#" pagetitle="能源站集水坑"><i class="fa fa-arrow-right"></i>能源站集水坑</a></li>
+                    <li><a frame_href="#" pagetitle="室内CO2浓度"><i class="fa fa-arrow-right"></i>室内CO2浓度</a></li>
+                    <li><a frame_href="#" pagetitle="室内温湿度"><i class="fa fa-arrow-right"></i>室内温湿度</a></li>
+                    <li><a frame_href="#" pagetitle="地下车库CO浓度"><i class="fa fa-arrow-right"></i>地下车库CO浓度</a></li>
+                    <li><a frame_href="#" pagetitle="空气质量"><i class="fa fa-arrow-right"></i>空气质量</a></li>
+                    <li><a frame_href="#" pagetitle="热风幕"><i class="fa fa-arrow-right"></i>热风幕</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a frame_href="#" pagetitle="停车场管理" class="animated">
-                    <i class="fa fa-user"></i>
+                    <i class="fa fa-cab"></i>
                     <span>停车场管理</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="停车场在离线监测"><i class="fa fa-angle-right"></i>停车场在离线监测</a></li>
-                    <li><a frame_href="#" pagetitle="停车场进出记录"><i class="fa fa-angle-right"></i>停车场进出记录</a></li>
+                    <li><a frame_href="#" pagetitle="停车场在离线监测"><i class="fa fa-arrow-right"></i>停车场在离线监测</a></li>
+                    <li><a frame_href="#" pagetitle="停车场进出记录"><i class="fa fa-arrow-right"></i>停车场进出记录</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
-                    <i class="fa fa-cubes"></i>
+                    <i class="fa fa-television"></i>
                     <span>电子巡更</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="巡更"><i class="fa fa-angle-right"></i> 巡更</a></li>
+                    <li><a frame_href="#" pagetitle="巡更"><i class="fa fa-arrow-right"></i> 巡更</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
-                    <i class="fa fa-pencil-square-o"></i>
+                    <i class="fa fa-video-camera"></i>
                     <span>电梯监控</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="1号楼-1"><i class="fa fa-angle-right"></i>1号楼-1</a></li>
-                    <li><a frame_href="#" pagetitle="1号楼-2"><i class="fa fa-angle-right"></i>1号楼-2</a></li>
-                    <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-right"></i>2号楼</a></li>
-                    <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-right"></i>3号楼</a></li>
+                    <li><a frame_href="#" pagetitle="1号楼-1"><i class="fa fa-arrow-right"></i>1号楼-1</a></li>
+                    <li><a frame_href="#" pagetitle="1号楼-2"><i class="fa fa-arrow-right"></i>1号楼-2</a></li>
+                    <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-arrow-right"></i>2号楼</a></li>
+                    <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-arrow-right"></i>3号楼</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
-                    <i class="fa fa-bar-chart"></i>
+                    <i class="fa fa-flash"></i>
                     <span>变配电</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-right"></i>1号楼</a>
+                    <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-arrow-right"></i>1号楼
+                        <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                    </a>
                         <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="应急照明用电"><i class="fa fa-angle-right"></i>应急照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-right"></i>照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="消防用电1"><i class="fa fa-angle-right"></i>消防用电1</a></li>
-                            <li><a frame_href="#" pagetitle="消防用电2"><i class="fa fa-angle-right"></i>消防用电2</a></li>
-                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-right"></i>电梯用电</a></li>
-                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-right"></i>动力用电</a></li>
-                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他</a>
+                            <li><a frame_href="#" pagetitle="应急照明用电"><i class="fa fa-angle-double-right"></i>应急照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-double-right"></i>照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="消防用电1"><i class="fa fa-angle-double-right"></i>消防用电1</a></li>
+                            <li><a frame_href="#" pagetitle="消防用电2"><i class="fa fa-angle-double-right"></i>消防用电2</a></li>
+                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-double-right"></i>电梯用电</a></li>
+                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-double-right"></i>动力用电</a></li>
+                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-double-right"></i>其他
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
                                 <ul class="treeview-menu">
                                     <li><a frame_href="#" pagetitle="其他用电1"><i class="fa fa-angle-right"></i>其他用电1</a>
                                     <li><a frame_href="#" pagetitle="其他用电2"><i class="fa fa-angle-right"></i>其他用电2</a>
@@ -261,32 +290,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-right"></i>2号楼</a>
+                    <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-arrow-right"></i>2号楼</a>
                         <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="应急照明用电"><i class="fa fa-angle-right"></i>应急照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-right"></i>照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="消防用电"><i class="fa fa-angle-right"></i>消防用电1</a></li>
-                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-right"></i>电梯用电</a></li>
-                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-right"></i>动力用电</a>
-                                <ul class="treeview-menu">
-                                    <li><a frame_href="#" pagetitle="其他用电1"><i class="fa fa-angle-right"></i>其他用电1</a>
-                                    <li><a frame_href="#" pagetitle="其他用电2"><i class="fa fa-angle-right"></i>其他用电2</a>
-                                    <li><a frame_href="#" pagetitle="其他用电3"><i class="fa fa-angle-right"></i>其他用电3</a>
-                                    <li><a frame_href="#" pagetitle="其他用电4"><i class="fa fa-angle-right"></i>其他用电4</a>
-                                </li>
-                                </ul>
-                            </li>
-                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他</a>
-                        </ul>
-                    </li>
-                    <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-right"></i>3号楼</a>
-                        <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="应急照明用电"><i class="fa fa-angle-right"></i>应急照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-right"></i>照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="消防用电"><i class="fa fa-angle-right"></i>消防用电1</a></li>
-                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-right"></i>电梯用电</a></li>
-                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-right"></i>动力用电</a></li>
-                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他</a>
+                            <li><a frame_href="#" pagetitle="应急照明用电"><i class="fa fa-angle-double-right"></i>应急照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-double-right"></i>照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="消防用电"><i class="fa fa-angle-double-right"></i>消防用电1</a></li>
+                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-double-right"></i>电梯用电</a></li>
+                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-double-right"></i>动力用电</a>
+                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-double-right"></i>其他</a>
                                 <ul class="treeview-menu">
                                     <li><a frame_href="#" pagetitle="其他用电1"><i class="fa fa-angle-right"></i>其他用电1</a>
                                     <li><a frame_href="#" pagetitle="其他用电2"><i class="fa fa-angle-right"></i>其他用电2</a>
@@ -297,18 +308,56 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a frame_href="#" pagetitle="数据中心"><i class="fa fa-angle-right"></i>数据中心</a>
+                    <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-arrow-right"></i>3号楼
+                        <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                    </a>
                         <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="其他用电"><i class="fa fa-angle-right"></i>其他用电</a>
+                            <li><a frame_href="#" pagetitle="应急照明用电"><i class="fa fa-angle-double-right"></i>应急照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-double-right"></i>照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="消防用电"><i class="fa fa-angle-double-right"></i>消防用电1</a></li>
+                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-double-right"></i>电梯用电</a></li>
+                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-double-right"></i>动力用电</a></li>
+                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-double-right"></i>其他
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="其他用电1"><i class="fa fa-angle-right"></i>其他用电1</a>
+                                    <li><a frame_href="#" pagetitle="其他用电2"><i class="fa fa-angle-right"></i>其他用电2</a>
+                                    <li><a frame_href="#" pagetitle="其他用电3"><i class="fa fa-angle-right"></i>其他用电3</a>
+                                    <li><a frame_href="#" pagetitle="其他用电4"><i class="fa fa-angle-right"></i>其他用电4</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a frame_href="#" pagetitle="能源中心"><i class="fa fa-angle-right"></i>能源中心</a>
+                    <li><a frame_href="#" pagetitle="数据中心"><i class="fa fa-arrow-right"></i>数据中心
+                        <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                    </a>
                         <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-right"></i>照明用电</a></li>
-                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-right"></i>电梯用电</a></li>
-                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-right"></i>动力用电</a></li>
-                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他</a>
+                            <li><a frame_href="#" pagetitle="其他用电"><i class="fa fa-angle-double-right"></i>其他用电</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="能源中心"><i class="fa fa-arrow-right"></i>能源中心
+                        <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="照明用电"><i class="fa fa-angle-double-right"></i>照明用电</a></li>
+                            <li><a frame_href="#" pagetitle="电梯用电"><i class="fa fa-angle-double-right"></i>电梯用电</a></li>
+                            <li><a frame_href="#" pagetitle="动力用电"><i class="fa fa-angle-double-right"></i>动力用电</a></li>
+                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-double-right"></i>其他
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
                                 <ul class="treeview-menu">
                                     <li><a frame_href="#" pagetitle="其他用电1"><i class="fa fa-angle-right"></i>其他用电1</a>
                                     <li><a frame_href="#" pagetitle="其他用电2"><i class="fa fa-angle-right"></i>其他用电2</a>
@@ -317,9 +366,17 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a frame_href="#" pagetitle="35kv变电站"><i class="fa fa-angle-right"></i>35kv变电站</a>
+                    <li><a frame_href="#" pagetitle="35kv变电站"><i class="fa fa-arrow-right"></i>35kv变电站
+                        <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                    </a>
                         <ul class="treeview-menu">
-                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他</a>
+                            <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-double-right"></i>其他
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
                                 <ul class="treeview-menu">
                                     <li><a frame_href="#" pagetitle="其他用电1"><i class="fa fa-angle-right"></i>其他用电1</a>
                                     <li><a frame_href="#" pagetitle="其他用电2"><i class="fa fa-angle-right"></i>其他用电2</a>
@@ -332,27 +389,623 @@
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
             <a class="animated">
-                <i class="fa fa-gears"></i>
-                <span>系统配置</span>
+                <i class="fa fa-calculator"></i>
+                <span>能源计量</span>
                 <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
             </a>
             <ul class="treeview-menu">
-                <li><a frame_href="#" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
-                <li><a frame_href="#" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
-                <li><a frame_href="#" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
+                <li><a frame_href="#" pagetitle="能量表"><i class="fa fa-arrow-right"></i>能量表
+                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                </a>
+                    <ul class="treeview-menu">
+                        <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼
+                            <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                            </ul>
+                        </li>
+                        <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼
+                            <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                <li><a frame_href="#" pagetitle="第四页"><i class="fa fa-angle-right"></i>第四页</a></li>
+                            </ul>
+                        </li>
+                        <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-double-right"></i>3号楼
+                            <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a frame_href="#" pagetitle="水表"><i class="fa fa-arrow-right"></i>水表
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                    <ul class="treeview-menu">
+                        <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼
+                            <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="生活水给水1"><i class="fa fa-angle-right"></i>生活水给水1</a></li>
+                                <li><a frame_href="#" pagetitle="生活水给水2"><i class="fa fa-angle-right"></i>生活水给水2</a></li>
+                                <li><a frame_href="#" pagetitle="中水给水"><i class="fa fa-angle-right"></i>中水给水</a></li>
+                            </ul>
+                        </li>
+                        <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="生活水给水1"><i class="fa fa-angle-right"></i>生活水给水1</a></li>
+                                <li><a frame_href="#" pagetitle="生活水给水2"><i class="fa fa-angle-right"></i>生活水给水2</a></li>
+                                <li><a frame_href="#" pagetitle="中水给水"><i class="fa fa-angle-right"></i>中水给水</a></li>
+                            </ul>
+                        </li>
+                        <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-double-right"></i>3号楼
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="生活水给水1"><i class="fa fa-angle-right"></i>生活水给水1</a></li>
+                                <li><a frame_href="#" pagetitle="生活水给水2"><i class="fa fa-angle-right"></i>生活水给水2</a></li>
+                                <li><a frame_href="#" pagetitle="中水给水"><i class="fa fa-angle-right"></i>中水给水</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a frame_href="#" pagetitle="电表"><i class="fa fa-arrow-right"></i>电表</a>
+                    <ul class="treeview-menu">
+                        <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="照明"><i class="fa fa-angle-right"></i>照明
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="应急照明"><i class="fa fa-angle-right"></i>应急照明
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="消防"><i class="fa fa-angle-right"></i>消防
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="电梯"><i class="fa fa-angle-right"></i>电梯
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="动力"><i class="fa fa-angle-right"></i>动力</a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="弱电间"><i class="fa fa-angle-right"></i>弱电间
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="照明"><i class="fa fa-angle-right"></i>照明
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="应急照明"><i class="fa fa-angle-right"></i>应急照明
+                                    <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="消防"><i class="fa fa-angle-right"></i>消防
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                        <li><a frame_href="#" pagetitle="第四页"><i class="fa fa-angle-right"></i>第四页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="电梯"><i class="fa fa-angle-right"></i>电梯
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="弱电间"><i class="fa fa-angle-right"></i>弱电间
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="动力"><i class="fa fa-angle-right"></i>动力
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-double-right"></i>3号楼
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                            <ul class="treeview-menu">
+                                <li><a frame_href="#" pagetitle="照明"><i class="fa fa-angle-right"></i>照明
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="应急照明"><i class="fa fa-angle-right"></i>应急照明
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="消防"><i class="fa fa-angle-right"></i>消防
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="电梯"><i class="fa fa-angle-right"></i>电梯
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="动力"><i class="fa fa-angle-right"></i>动力
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                        <li><a frame_href="#" pagetitle="第三页"><i class="fa fa-angle-right"></i>第三页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="其他"><i class="fa fa-angle-right"></i>其他
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                    </ul>
+                                </li>
+                                <li><a frame_href="#" pagetitle="弱电间"><i class="fa fa-angle-right"></i>弱电间
+                                    <span class="pull-right-container">
+                                         <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                    <ul class="treeview-menu">
+                                        <li><a frame_href="#" pagetitle="第一页"><i class="fa fa-angle-right"></i>第一页</a></li>
+                                        <li><a frame_href="#" pagetitle="第二页"><i class="fa fa-angle-right"></i>第二页</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span>能耗分析</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="1号楼能耗分析"><i class="fa fa-arrow-right"></i>1号楼能耗分析</a></li>
+                    <li><a frame_href="#" pagetitle="2号楼能耗分析"><i class="fa fa-arrow-right"></i>2号楼能耗分析</a></li>
+                    <li><a frame_href="#" pagetitle="3号楼能耗分析"><i class="fa fa-arrow-right"></i>3号楼能耗分析</a></li>
+                    <li><a frame_href="#" pagetitle="能源站能耗分析"><i class="fa fa-arrow-right"></i>能源站能耗分析</a></li>
+                    <li><a frame_href="#" pagetitle="数据中心能耗分析"><i class="fa fa-arrow-right"></i>数据中心能耗分析</a></li>
+                    <li><a frame_href="#" pagetitle="35kv配电室能耗分析"><i class="fa fa-arrow-right"></i>35kv配电室能耗分析</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated">
+                    <i class="fa fa-paper-plane"></i>
+                    <span>信息发布</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="设备在离线状态-1"><i class="fa fa-arrow-right"></i>设备在离线状态-1</a></li>
+                    <li><a frame_href="#" pagetitle="设备在离线状态-2"><i class="fa fa-arrow-right"></i> 设备在离线状态-2</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated">
+                    <i class="fa fa-bullhorn"></i>
+                    <span>广播系统</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-arrow-right"></i>1号楼
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼1</a></li>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>1号楼2</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-arrow-right"></i>2号楼
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>2号楼1</a></li>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼2</a></li>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼3</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-arrow-right"></i>3号楼
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>3号楼1</a></li>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>3号楼2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated">
+                    <i class="fa fa-certificate"></i>
+                    <span>冷热源</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="项目配置"><i class="fa fa-arrow-right"></i>冷热源</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated">
+                    <i class="fa fa-sun-o"></i>
+                    <span>暖通空调</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="新风机组"><i class="fa fa-arrow-right"></i>新风机组
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼
+                                <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="B1F-3F"><i class="fa fa-angle-right"></i>B1F-3F</a></li>
+                                    <li><a frame_href="#" pagetitle="11F-30F"><i class="fa fa-angle-right"></i>11F-30F</a></li>
+                                </ul>
+                            </li>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼
+                                <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="B1F-3F"><i class="fa fa-angle-right"></i>B1F-3F</a></li>
+                                    <li><a frame_href="#" pagetitle="3F-15F"><i class="fa fa-angle-right"></i>3F-15F</a></li>
+                                </ul>
+                            </li>
+                            <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-double-right"></i>3号楼
+                                <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="B1F-4F"><i class="fa fa-angle-right"></i>B1F-4F</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="空调机组"><i class="fa fa-arrow-right"></i>空调机组
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-angle-double-right"></i>1号楼
+                                <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="B1F-4F"><i class="fa fa-angle-right"></i>B1F-4F</a></li>
+                                    <li><a frame_href="#" pagetitle="5F-10F"><i class="fa fa-angle-right"></i>5F-10F</a></li>
+                                    <li><a frame_href="#" pagetitle="10F-17F"><i class="fa fa-angle-right"></i>10F-17F</a></li>
+                                    <li><a frame_href="#" pagetitle="17F-23F"><i class="fa fa-angle-right"></i>17F-23F</a></li>
+                                    <li><a frame_href="#" pagetitle="24F-32F"><i class="fa fa-angle-right"></i>24F-32F</a></li>
+                                </ul>
+                            </li>
+                            <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-angle-double-right"></i>2号楼
+                                <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="B1F-2F"><i class="fa fa-angle-right"></i>B1F-2F</a></li>
+                                    <li><a frame_href="#" pagetitle="2F-7F"><i class="fa fa-angle-right"></i>2F-7F</a></li>
+                                    <li><a frame_href="#" pagetitle="7F-11F"><i class="fa fa-angle-right"></i>7F-11F</a></li>
+                                    <li><a frame_href="#" pagetitle="11F-16F"><i class="fa fa-angle-right"></i>11F-16F</a></li>
+                                    <li><a frame_href="#" pagetitle="16F"><i class="fa fa-angle-right"></i>16F</a></li>
+                                </ul>
+                            </li>
+                            <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-angle-double-right"></i>3号楼
+                                <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                                <ul class="treeview-menu">
+                                    <li><a frame_href="#" pagetitle="B1F-6F"><i class="fa fa-angle-right"></i>B1F-6F</a></li>
+                                    <li><a frame_href="#" pagetitle="7F-11F"><i class="fa fa-angle-right"></i>7F-11F</a></li>
+                                    <li><a frame_href="#" pagetitle="11F-15F"><i class="fa fa-angle-right"></i>11F-15F</a></li>
+                                    <li><a frame_href="#" pagetitle="15F-19F"><i class="fa fa-angle-right"></i>15F-19F</a></li>
+                                    <li><a frame_href="#" pagetitle="19F-20F"><i class="fa fa-angle-right"></i>19F-20F</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="送风机"><i class="fa fa-arrow-right"></i>送风机</a></li>
+                    <li><a frame_href="#" pagetitle="水泵系统"><i class="fa fa-arrow-right"></i>水泵系统</a></li>
+                    <li><a frame_href="#" pagetitle="地板采暖换热器"><i class="fa fa-arrow-right"></i>地板采暖换热器</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated">
+                    <i class="fa fa-file-video-o"></i>
+                    <span>安防监控</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="报警复位"><i class="fa fa-arrow-right"></i>报警复位
+                    </a>
+                    </li>
+                    <li><a frame_href="#" pagetitle="1号楼"><i class="fa fa-arrow-right"></i>1号楼
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼室外"><i class="fa fa-angle-double-right"></i>1号楼室外</a></li>
+                            <li><a frame_href="#" pagetitle="B2F"><i class="fa fa-angle-double-right"></i>B2F</a></li>
+                            <li><a frame_href="#" pagetitle="B1F"><i class="fa fa-angle-double-right"></i>B1F</a></li>
+                            <li><a frame_href="#" pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a frame_href="#" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a frame_href="#" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a frame_href="#" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a frame_href="#" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>V
+                            <li><a frame_href="#" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a frame_href="#" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a frame_href="#" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a frame_href="#" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a frame_href="#" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a frame_href="#" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="2号楼"><i class="fa fa-arrow-right"></i>2号楼
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼室外"><i class="fa fa-angle-double-right"></i>1号楼室外</a></li>
+                            <li><a frame_href="#" pagetitle="B2F"><i class="fa fa-angle-double-right"></i>B2F</a></li>
+                            <li><a frame_href="#" pagetitle="B1F"><i class="fa fa-angle-double-right"></i>B1F</a></li>
+                            <li><a frame_href="#" pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a frame_href="#" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a frame_href="#" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a frame_href="#" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a frame_href="#" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>V
+                            <li><a frame_href="#" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a frame_href="#" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a frame_href="#" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a frame_href="#" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a frame_href="#" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a frame_href="#" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="3号楼"><i class="fa fa-arrow-right"></i>3号楼
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼室外"><i class="fa fa-angle-double-right"></i>1号楼室外</a></li>
+                            <li><a frame_href="#" pagetitle="B2F"><i class="fa fa-angle-double-right"></i>B2F</a></li>
+                            <li><a frame_href="#" pagetitle="B1F"><i class="fa fa-angle-double-right"></i>B1F</a></li>
+                            <li><a frame_href="#" pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a frame_href="#" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a frame_href="#" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a frame_href="#" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a frame_href="#" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>V
+                            <li><a frame_href="#" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a frame_href="#" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a frame_href="#" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a frame_href="#" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a frame_href="#" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a frame_href="#" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="速通门"><i class="fa fa-arrow-right"></i>速通门
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li><a frame_href="#" pagetitle="1号楼速通门"><i class="fa fa-angle-double-right"></i>1号楼速通门</a></li>
+                            <li><a frame_href="#" pagetitle="2号楼速通门"><i class="fa fa-angle-double-right"></i>2号楼速通门</a></li>
+                            <li><a frame_href="#" pagetitle="3号楼速通门"><i class="fa fa-angle-double-right"></i>3号楼速通门</a></li>
+                    </li>
+                </ul>
+                    </li>
+                </ul>
         </ul>
     </section>
     <!-- /.sidebar -->
 </aside>
-<section class="content" style="float: right">
+<div class="content-wrapper _main-content-wrapper">
+<section class="content">
     <div class="center-block" id="LG">
         <img src="../img/c.PNG">
     </div>
 </section>
-
+</div>
 </body>
 </html>
