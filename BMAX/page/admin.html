@@ -21,6 +21,21 @@
     <link rel="stylesheet" href="../dist/css/skins/skin-blue.min.css">
     <link rel="stylesheet" href="../beplugins/animation/loding.css">
     <script src="../js/ssbj.js" rel="stylesheet"></script>
+
+    <script>
+        function big(x){
+            x.style.fontSize="16px";
+        }
+        function normal(x){
+            x.style.fontSize="14px";
+        }
+        function changeFrameHeight(){
+            var ifm= document.getElementById("center");
+            ifm.height=document.documentElement.clientHeight-80;
+        }
+        window.onresize=function(){ changeFrameHeight();}
+        $(function(){changeFrameHeight();});
+    </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <header class="main-header" id="_layout_header">
@@ -107,8 +122,8 @@
                 </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
-                    <li><a frame_href="#" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
+                    <li><a href="http://localhost:8082/view/gongqifang_2.aspx" target="center_main" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
+                    <li><a href="http://localhost:8082/view/gongqifang_2.aspx" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
@@ -186,13 +201,15 @@
     </section>
     <!-- /.sidebar -->
 </aside>
-<div class="content-wrapper _main-content-wrapper">
+<section class="content-wrapper _main-content-wrapper">
     <section class="content">
         <div class="center-block" id="LG">
-            <img src="../img/c.PNG">
+            <iframe id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
+            </iframe>
         </div>
     </section>
-</div>
+</section>
 
 </body>
 </html>

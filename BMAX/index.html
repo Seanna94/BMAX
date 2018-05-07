@@ -29,23 +29,29 @@
         function normal(x){
             x.style.fontSize="14px";
         }
+        function changeFrameHeight(){
+            var ifm= document.getElementById("center");
+            ifm.height=document.documentElement.clientHeight-80;
+        }
+        window.onresize=function(){ changeFrameHeight();}
+        $(function(){changeFrameHeight();});
     </script>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" style=" height:100%; padding: 0; margin: 0;">
 <header class="main-header" id="_layout_header">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
         <span class="logo-mini"><b>B</b>P</span>
         <span class="logo-lg"><b>Basepoint</b></span>
     </a>
     <nav class="navbar">
         <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
-        <a href="#" class="sidebar-toggle"onmousemove="big(this)" onmouseout="normal(this)">
+        <a href="#" data-toggle="offcanvas" class="sidebar-toggle"onmousemove="big(this)" onmouseout="normal(this)">
             <span class="sr-only">Toggle navigation</span>
         </a>
 
-        <div class=   <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
             <ul class="nav navbar-nav topmenu">
-                <li><a class="animated"onmousemove="big(this)" onmouseout="normal(this)">系统监控</a></li>
+                <li><a href="page/xtjk.html" class="animated"onmousemove="big(this)" onmouseout="normal(this)">系统监控</a></li>
             </ul>
         </div>
         <div class="navbar-custom-menu">
@@ -106,32 +112,32 @@
 </header>
 
 <aside class="main-sidebar">
-    <section class="sidebar" style="height: 849px; overflow: hidden; width: auto;">
+    <section class="sidebar" style="height: auto;">
         <ul class="sidebar-menu" id="_frame_left_menu">
             <li style="  text-align: center;color: #eee;"><a><i class="header"></i> <span>功能菜单</span></a></li>
             <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     <i class="fa fa-exclamation-triangle"></i>
                     <span>报警管理</span>
-                    <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
-                    <li><a frame_href="#" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
+                    <li><a href="http://localhost:8082/view/baogaoting.aspx" target="center_main" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
+                    <li><a href="https://blog.csdn.net/carrybest/article/details/54286137" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
-                    <i class="fa fa-users"></i>
-                    <span>角色管理</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                 </span>
+                    <i class="fa fa-users"></i>
+                    <span>角色管理</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="用户角色"><i class="fa fa-circle-thin"></i> 用户角色</a></li>
+                    <li><a href="https://www.baidu.com" target="center_main" pagetitle="用户角色"><i class="fa fa-circle-thin"></i> 用户角色</a></li>
                     <li><a frame_href="#" pagetitle="系统监控角色"><i class="fa fa-circle-thin"></i> 系统监控角色</a></li>
                 </ul>
             </li>
@@ -143,11 +149,11 @@
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     <i class="fa fa-cubes"></i>
                     <span>模式管理</span>
-                    <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a frame_href="#" pagetitle="模式运行"><i class="fa fa-circle-thin"></i> 模式运行</a></li>
@@ -156,11 +162,11 @@
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     <i class="fa fa-pencil-square-o"></i>
                     <span>运行日志</span>
-                    <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a frame_href="#" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
@@ -169,11 +175,11 @@
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     <i class="fa fa-bar-chart"></i>
                     <span>报表查询</span>
-                    <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a frame_href="#" pagetitle="历史报表"><i class="fa fa-circle-thin"></i> 历史报表</a></li>
@@ -181,11 +187,11 @@
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
+                     <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     <i class="fa fa-gears"></i>
                     <span>系统配置</span>
-                    <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a frame_href="#" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
@@ -197,7 +203,15 @@
     </section>
     <!-- /.sidebar -->
 </aside>
-
+<section class="content-wrapper _main-content-wrapper">
+    <section class="content">
+        <div class="center-block" id="LG">
+            <iframe id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
+         scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
+    </iframe>
+        </div>
+    </section>
+</section>
 
 </body>
 </html>
