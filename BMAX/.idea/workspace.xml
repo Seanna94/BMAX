@@ -2,609 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e112137-88ae-4e75-9d93-d1bf97e5599b" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/page/gongqifang_1.aspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BMAX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BMAX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/AdminLTE.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/AdminLTE.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/AdminLTE.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/_all-skins.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/_all-skins.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-black-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-black-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-black.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-black.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-blue-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-blue-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-green-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-green-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-green.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-purple-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-purple-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-purple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-red-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-red-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-red.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-red.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-yellow-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-yellow-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/skins/skin-yellow.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/skins/skin-yellow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/pages/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/pages/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/pages/dashboard2.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/AdminLTE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/ControlSidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/PushMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/SiteSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/Treeview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/js/Widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/npm/Plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/npm/Publish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/.csslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/AdminLTE-raw.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/AdminLTE.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_404_500_errors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_bootstrap-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_brand.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_callout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_control-sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_direct-chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_elevation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_fullcalendar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_info-box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_invoice.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_labels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_lockscreen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_login_and_register.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_mailbox.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_main-header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_main-sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_miscellaneous.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_products.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_progress-bars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_select2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_sidebar-mini.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_small-box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_social-widgets.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_table.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_timeline.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_users-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BMAX.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/AdminLTE.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ssbj.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ssbj.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/ssbj.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/xtjk.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/xtjk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap-slider/bootstrap-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap-slider/bootstrap-slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap-slider/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap-slider/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/Chart.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/linear.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/linear.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/logarithmic.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/logarithmic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/time.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/cartesian/time.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/labelling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/labelling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/radial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/radial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/radial/linear.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/radial/linear.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/axes/styling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/axes/styling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/area.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/area.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/bubble.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/bubble.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/doughnut.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/doughnut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/line.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/line.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/mixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/mixed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/polar.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/polar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/radar.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/radar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/charts/scatter.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/charts/scatter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/animations.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/animations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/legend.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/legend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/title.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/title.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/tooltip.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/configuration/tooltip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/axes.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/axes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/charts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/contributing.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/contributing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/plugins.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/developers/updates.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/developers/updates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/colors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/device-pixel-ratio.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/device-pixel-ratio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/device-pixel-ratio.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/device-pixel-ratio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/fonts.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/fonts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/interactions/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/interactions/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/interactions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/interactions/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/interactions/modes.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/interactions/modes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/general/responsive.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/general/responsive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/installation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/integration.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/integration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/usage.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/getting-started/usage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-fontsettings/website.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-ga/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-ga/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-highlight/ebook.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-highlight/website.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-search-plus/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-search-plus/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-search-plus/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-search-plus/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook-plugin-sharing/buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/gitbook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/gitbook/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/notes/comparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/notes/comparison.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/notes/extensions.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/notes/extensions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/notes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/notes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/notes/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/notes/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chart.js/docs/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chart.js/docs/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chartjs-old/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chartjs-old/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/chartjs-old/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/chartjs-old/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/colorpicker/bootstrap-colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/colorpicker/bootstrap-colorpicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/colorpicker/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/colorpicker/bootstrap-colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/colorpicker/bootstrap-colorpicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/colorpicker/bootstrap-colorpicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap4.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.foundation.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.jqueryui.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.jqueryui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.material.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.material.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.material.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.material.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.semanticui.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.semanticui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.uikit.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.uikit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/dataTables.uikit.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/dataTables.uikit.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/jquery.dataTables.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/css/jquery.dataTables_themeroller.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/css/jquery.dataTables_themeroller.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/columns.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/columns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/complete-callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/complete-callback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/fill-both.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/fill-both.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/scrolling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/scrolling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/step-callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/examples/step-callback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/alt_insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/alt_insert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/col_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/col_filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/colvis.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/colvis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/fixedheader.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/fixedheader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/jqueryui.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/jqueryui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/new_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/new_init.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/predefined.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/predefined.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/realtime.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/realtime.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/scrolling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/scrolling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/server_side.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/server_side.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/state_save.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/examples/state_save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/button_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/button_order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/group_columns.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/group_columns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/jqueryui.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/jqueryui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/mouseover.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/mouseover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/new_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/new_init.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/restore.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/restore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/title_callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/title_callback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/two_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/two_tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/colvis.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/colvis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/css_size.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/css_size.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/index_column.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/index_column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/right_column.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/right_column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/header_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/header_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/two_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/two_tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/html.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/scrolling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/scrolling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/css/dataTables.responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/css/dataTables.responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/compact.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/compact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/api_scrolling.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/api_scrolling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/data/2500.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/data/2500.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/data/ssp.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/data/ssp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/large_js_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/large_js_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/state_saving.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/examples/state_saving.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/ajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/alter_buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/alter_buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/bootstrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/button_text.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/button_text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/collection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/defaults.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/defaults.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/jqueryui.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/jqueryui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/multi_instance.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/multi_instance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/multiple_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/multiple_tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/new_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/new_init.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/pdf_message.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/pdf_message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/plug-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/plug-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_column.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_multi.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_multi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_os.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_os.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/select_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/swf_path.html" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/examples/swf_path.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables_themeroller.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/jquery.dataTables_themeroller.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap4.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.foundation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.jqueryui.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.jqueryui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.material.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.material.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.material.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.material.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.semanticui.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.semanticui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.uikit.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.uikit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/dataTables.uikit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/dataTables.uikit.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datatables/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/bootstrap-datepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/datepicker3.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/datepicker3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.az.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.da.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.de.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.el.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.et.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.he.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.id.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.is.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.it.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.kk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.kr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.kr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.no.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.rs.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.rs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.th.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ua.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.ua.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/daterangepicker/daterangepicker-bs3.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/daterangepicker/daterangepicker-bs3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/daterangepicker/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/daterangepicker/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/daterangepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/echart/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/echart/echarts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fastclick/fastclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fastclick/fastclick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/excanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/excanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.colorhelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.colorhelpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.crosshair.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.crosshair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.errorbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.errorbars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.fillbetween.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.fillbetween.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.image.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.navigate.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.navigate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.pie.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.pie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.resize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.stack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.symbol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.threshold.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.threshold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/flot/jquery.flot.time.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/flot/jquery.flot.time.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/font-awesome/css/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fontawesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fontawesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fontawesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fontawesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fontawesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fontawesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.print.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/fullcalendar/fullcalendar.print.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/_all.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/_all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/aero.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/aero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/flat.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/flat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/green.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/grey.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/grey.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/orange.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/pink.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/pink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/purple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/red.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/red.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/flat/yellow.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/flat/yellow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/futurico/futurico.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/futurico/futurico.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/icheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/icheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/icheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/icheck.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/_all.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/_all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/aero.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/aero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/green.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/grey.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/grey.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/line.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/line.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/orange.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/pink.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/pink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/purple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/red.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/red.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/line/yellow.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/line/yellow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/_all.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/_all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/aero.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/aero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/green.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/grey.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/grey.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/minimal.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/minimal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/orange.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/pink.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/pink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/purple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/red.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/red.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/minimal/yellow.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/minimal/yellow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/polaris/polaris.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/polaris/polaris.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/_all.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/_all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/aero.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/aero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/green.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/grey.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/grey.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/orange.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/orange.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/pink.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/pink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/purple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/red.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/red.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/square.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/square.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/iCheck/square/yellow.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/iCheck/square/yellow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.date.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.date.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.numeric.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.numeric.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.phone.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.phone.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.regex.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/jquery.inputmask.regex.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/phone-codes/phone-be.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/phone-codes/phone-be.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/input-mask/phone-codes/phone-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/input-mask/phone-codes/phone-codes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.skinFlat.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.skinFlat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.skinNice.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/ionslider/ion.rangeSlider.skinNice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQuery/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQuery/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQuery/jQuery-2.2.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQuery/jQuery-2.2.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQuery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQuery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQuery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQuery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQuery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQuery/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQuery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQuery/jquery.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQueryUI/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQueryUI/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jQueryUI/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jQueryUI/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jvectormap/jquery-jvectormap-1.2.2.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jvectormap/jquery-jvectormap-1.2.2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/knob/jquery.knob.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/knob/jquery.knob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/moment/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/moment/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/morris/morris.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/morris/morris.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/morris/morris.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/morris/morris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/morris/morris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/morris/morris.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/pace/pace.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pace/pace.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/pace/pace.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pace/pace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/pace/pace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pace/pace.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/esm/popper-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/esm/popper-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/esm/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/esm/popper-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/esm/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/esm/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/esm/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/esm/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/popper-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/popper-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/popper-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/umd/popper-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/umd/popper-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/umd/popper-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/umd/popper-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/umd/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/umd/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/popper/umd/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/popper/umd/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/i18n/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/select2.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/hotkeys.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/hotkeys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/hotkeys.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/hotkeys.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/module.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/module.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/simditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/simditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/simditor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/simditor.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/uploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/uploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/scripts/uploader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/scripts/uploader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/styles/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/styles/editor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/styles/simditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/styles/simditor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/simditor/styles/simditor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/simditor/styles/simditor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/slimScroll/jquery.slimscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/slimScroll/jquery.slimscroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sparkline/jquery.sparkline.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sparkline/jquery.sparkline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/sparkline/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/sparkline/jquery.sparkline.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/timeago/timeago.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/timeago/timeago.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/timeago/timeago_zh_cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/timeago/timeago_zh_cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/timepicker/bootstrap-timepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/validate/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/validate/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.fis.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.fis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.flashonly.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.flashonly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.flashonly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.flashonly.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.html5only.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.html5only.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.html5only.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.html5only.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.noimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.noimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.noimage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.noimage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.nolog.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.nolog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.nolog.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.nolog.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.withoutimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.withoutimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/webuploader/webuploader.withoutimage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/animate/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/slimScroll/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test1.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -618,58 +84,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#A#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="36" column="44" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="36" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xtjk.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/xtjk.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="1094" lean-forward="true" selection-start-line="1094" selection-end-line="1102" selection-end-column="10" />
+            <state relative-caret-position="354">
+              <caret line="117" selection-start-line="117" selection-end-line="119" selection-end-column="56" />
               <folding>
-                <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#0;n#ul#0;n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="1093" column="103" lean-forward="true" selection-start-line="1093" selection-start-column="103" selection-end-line="1093" selection-end-column="107" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -678,41 +122,62 @@
       <file leaf-file-name="ssbj.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ssbj.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="264">
+              <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/admin.html">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-759">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="542">
+              <caret line="1003" column="30" selection-start-line="1003" selection-start-column="15" selection-end-line="1003" selection-end-column="30" />
               <folding>
-                <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#li#3;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#4;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ssbj.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/ssbj.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="528">
+              <caret line="205" selection-start-line="205" selection-end-line="207" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33429">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -722,8 +187,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -731,13 +196,20 @@
     <findStrings>
       <find>Img</find>
       <find>before</find>
-      <find>img</find>
       <find>sidebar-toggle animated</find>
       <find>信息</find>
       <find>楼宇</find>
       <find>sidebar</find>
       <find>安</find>
       <find>变</find>
+      <find>overflow</find>
+      <find>auto</find>
+      <find>V</find>
+      <find>content</find>
+      <find>main-header navbar navbar-expand bg-white navbar-light border-botto</find>
+      <find>class=&quot;sidebar&quot;</find>
+      <find>功能</find>
+      <find>img</find>
     </findStrings>
     <dirStrings>
       <dir>F:\workspace\BMAX</dir>
@@ -767,10 +239,15 @@
         <option value="$PROJECT_DIR$/css/ssbj.css" />
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/page/ssbj.html" />
+        <option value="$PROJECT_DIR$/plugins/animate/animate.css" />
+        <option value="$PROJECT_DIR$/test2.html" />
+        <option value="$PROJECT_DIR$/test1.html" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/page/test.html" />
+        <option value="$PROJECT_DIR$/page/xtjk.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/ssbj.js" />
-        <option value="$PROJECT_DIR$/page/xtjk.html" />
+        <option value="$PROJECT_DIR$/page/admin.html" />
       </list>
     </option>
   </component>
@@ -783,9 +260,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="314" />
-    <option name="width" value="1608" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="279" />
+    <option name="y" value="59" />
+    <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -796,6 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -806,37 +285,41 @@
             <path>
               <item name="BMAX" type="b2602c69:ProjectViewProjectNode" />
               <item name="BMAX" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BMAX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BMAX" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/代码/AdminLTE-3.0.0-alpha" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workspace\BMAX\page" />
-      <recent name="F:\workspace\BMAX\img" />
-      <recent name="F:\workspace\BMAX\plugins" />
-      <recent name="F:\workspace\BMAX\static\bootstrap" />
-      <recent name="F:\workspace\BMAX\static\bootstrap\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\workspace\BMAX" />
       <recent name="F:\workspace\BMAX\views" />
       <recent name="F:\workspace\BMAX\views\include" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\BMAX\page" />
+      <recent name="F:\workspace\BMAX" />
+      <recent name="F:\workspace\BMAX\plugins\slimScroll" />
+      <recent name="F:\workspace\BMAX\dist\css" />
+      <recent name="F:\workspace\BMAX\dist\css\AdminLTE.css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -875,27 +358,36 @@
       <workItem from="1525223558507" duration="23217000" />
       <workItem from="1525307427601" duration="23837000" />
       <workItem from="1525400062526" duration="17818000" />
-      <workItem from="1525652937214" duration="11292000" />
+      <workItem from="1525652937214" duration="23126000" />
+      <workItem from="1525740399882" duration="1290000" />
+      <workItem from="1525743174052" duration="21467000" />
+      <workItem from="1525825776945" duration="23170000" />
+      <workItem from="1525859475743" duration="777000" />
+      <workItem from="1525860514549" duration="107000" />
+      <workItem from="1525861310814" duration="156000" />
+      <workItem from="1525861512982" duration="84000" />
+      <workItem from="1525861605211" duration="1651000" />
+      <workItem from="1525912247320" duration="9621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129317000" />
+    <option name="totallyTimeSpent" value="199474000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10590095" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11696523" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32946146" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" sideWeight="0.49947917" weight="0.32946146" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.32946146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -918,165 +410,37 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/page/admin.html</url>
-          <line>82</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="5181">
+          <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/xtjk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="98" column="83" selection-start-line="98" selection-start-column="83" selection-end-line="98" selection-end-column="83" />
-          <folding>
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/admin.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1221">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        <state relative-caret-position="3399">
+          <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
           <folding>
-            <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#3;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#4;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ssbj.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/ssbj.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#A#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="63" column="11" lean-forward="true" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/xtjk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="100" column="94" selection-start-line="100" selection-start-column="94" selection-end-line="100" selection-end-column="94" />
-          <folding>
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6402">
-          <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#3;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#4;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ssbj.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1093,32 +457,27 @@
           <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#A#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6600">
           <caret line="200" lean-forward="true" selection-end-line="202" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1127,21 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1485">
           <caret line="45" column="24" lean-forward="true" selection-end-line="195" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#3;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#4;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1164,48 +508,31 @@
         <state relative-caret-position="9603">
           <caret line="342" column="68" selection-start-line="342" selection-start-column="68" selection-end-line="342" selection-end-column="68" />
           <folding>
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#A#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
           <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1218,13 +545,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css" />
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/css/index.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1232,40 +553,32 @@
           <caret line="94" column="34" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3399">
           <caret line="103" column="97" selection-start-line="103" selection-start-column="97" selection-end-line="103" selection-end-column="97" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/css/index.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1273,20 +586,16 @@
           <caret line="92" column="65" lean-forward="true" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/css/index.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1305,13 +614,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/include/leftSide.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38676">
-          <caret line="5" column="45" lean-forward="true" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -1327,19 +629,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/jQuery/jQuery-2.2.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/fontawesome/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
           <caret line="3" column="21848" selection-start-line="3" selection-start-column="21844" selection-end-line="3" selection-end-column="21848" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="6" column="4724" lean-forward="true" selection-start-line="6" selection-start-column="4724" selection-end-line="6" selection-end-column="4724" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/animate/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="3476" lean-forward="true" selection-start-line="3476" selection-end-line="3476" />
         </state>
       </provider>
     </entry>
@@ -1350,59 +664,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/dist/css/adminlt.css" />
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#A#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="35244">
+          <caret line="4" column="117642" selection-start-line="4" selection-start-column="117642" selection-end-line="4" selection-end-column="117642" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/slimScroll/jquery.slimscroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/系统监控.html" />
     <entry file="file://$PROJECT_DIR$/dist/css/AdminLTE.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="6" column="7810" selection-start-line="6" selection-start-column="7798" selection-end-line="6" selection-end-column="7810" />
+        <state relative-caret-position="198">
+          <caret line="6" column="7769" selection-start-line="6" selection-start-column="7769" selection-end-line="6" selection-end-column="7769" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-33429">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="36" column="44" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="36" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ssbj.js">
+    <entry file="file://$PROJECT_DIR$/test2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/xtjk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="1094" lean-forward="true" selection-start-line="1094" selection-end-line="1102" selection-end-column="10" />
+        <state relative-caret-position="354">
+          <caret line="117" selection-start-line="117" selection-end-line="119" selection-end-column="56" />
           <folding>
-            <element signature="n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="1003" column="30" selection-start-line="1003" selection-start-column="15" selection-end-line="1003" selection-end-column="30" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1410,39 +741,41 @@
             <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="205" selection-start-line="205" selection-end-line="207" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ssbj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        <state relative-caret-position="542">
+          <caret line="1093" column="103" lean-forward="true" selection-start-line="1093" selection-start-column="103" selection-end-line="1093" selection-end-column="107" />
           <folding>
-            <element signature="n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#li#3;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#4;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -31,7 +31,7 @@
         }
         function changeFrameHeight(){
             var ifm= document.getElementById("center");
-            ifm.height=document.documentElement.clientHeight-80;
+            ifm.height=document.documentElement.clientHeight-50;
         }
         window.onresize=function(){ changeFrameHeight();}
         $(function(){changeFrameHeight();});
@@ -45,7 +45,7 @@
     </a>
     <nav class="navbar">
         <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
-        <a href="#" data-toggle="offcanvas" class="sidebar-toggle"onmousemove="big(this)" onmouseout="normal(this)">
+        <a href="#" data-toggle="offcanvas" class="sidebar-toggle">
             <span class="sr-only">Toggle navigation</span>
         </a>
 
@@ -111,10 +111,10 @@
     </nav>
 </header>
 
-<aside class="main-sidebar">
-    <section class="sidebar" style="height: auto;">
-        <ul class="sidebar-menu" id="_frame_left_menu">
-            <li style="  text-align: center;color: #eee;"><a><i class="header"></i> <span>功能菜单</span></a></li>
+<aside class="main-sidebar" style="overflow-y: auto;">
+    <section class="sidebar" style="height: 849px;width: auto;">
+        <ul class="sidebar-menu"  id="_frame_left_menu">
+            <li class="header" style="text-align: center;color: #eee;font-size: 16px;">功能菜单</li>
             <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
                     <span class="pull-right-container">
@@ -125,7 +125,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="http://localhost:8082/view/baogaoting.aspx" target="center_main" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
-                    <li><a href="https://blog.csdn.net/carrybest/article/details/54286137" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
+                    <li><a href="http://localhost:8087/view/baogaoting.aspx" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
@@ -198,20 +198,13 @@
                     <li><a frame_href="#" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
                     <li><a frame_href="#" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
                 </ul>
-            </li>
+        </li>
         </ul>
     </section>
     <!-- /.sidebar -->
 </aside>
-<section class="content-wrapper _main-content-wrapper">
-    <section class="content">
-        <div class="center-block" id="LG">
-            <iframe id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
-         scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
-    </iframe>
-        </div>
-    </section>
-</section>
-
+<iframe class="content-wrapper" id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
+        scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
+</iframe>
 </body>
 </html>

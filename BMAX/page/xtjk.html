@@ -24,13 +24,25 @@
     <script>
         function changeFrameHeight(){
             var ifm= document.getElementById("center");
-            ifm.height=document.documentElement.clientHeight-80;
+            ifm.height=document.documentElement.clientHeight-54;
         }
-        window.onresize=function(){ changeFrameHeight();}
-        $(function(){changeFrameHeight();});
+        $(document).ready(function(){
+        $   ('ul li').click(function () {
+            var ifm= document.getElementById("center");
+            ifm.height=document.documentElement.clientHeight-54;
+            var event= document.getElementById("newEvent");
+            event.height=ifm.height;
+        });
+        });
+        window.onresize=function(){
+            changeFrameHeight();
+        }
+        $(function(){
+            changeFrameHeight();
+        });
     </script>
 </head>
-<body class="hold-transition skin-blue sidebar-mini overflow:auto">
+<body class="hold-transition skin-blue sidebar-mini">
 
 <header class="main-header" id="_layout_header">
     <a href="../index.html" class="logo">
@@ -39,12 +51,12 @@
     </a>
     <nav class="navbar">
         <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
-        <a href="#" class="sidebar-toggle"data-toggle="offcanvas"onmousemove="big(this)" onmouseout="normal(this)">
+        <a href="#" data-toggle="offcanvas" class="sidebar-toggle">
             <span class="sr-only">Toggle navigation</span>
         </a>
-       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
             <ul class="nav navbar-nav topmenu">
-                <li><a  href="xtjk.html" class="animated"onmousemove="big(this)" onmouseout="normal(this)">系统监控</a></li>
+                <li style=""><a class="animated">系统监控</a></li>
             </ul>
         </div>
         </div>
@@ -74,7 +86,7 @@
                 </li>
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle animated" data-toggle="dropdown">
-                        <img src="../img/a.jpg" id="page_layout_userHead1" class="user-image">
+                        <img src="../img/a.jpg" id="page_layout_userHead1" class="user-image" onerror="this.src ='/BMAX/Content/AdminLTE/dist/img/avatar5.png'">
                         <span class="hidden-xs" id="page_layout_userName_top">admin</span>
                     </a>
                     <ul class="dropdown-menu">
@@ -87,7 +99,7 @@
                         </li>
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a class="btn btn-default btn-flat btn-sm" myboxup="myboxup_12" id="page_layout_userCenter" pagetitle="个人中心">个人中心</a>
+                                <a class="btn btn-default btn-flat btn-sm" myboxup="myboxup_12" id="page_layout_userCenter" pagetitle="个人中心" frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/User/User/MyCenter">个人中心</a>
                             </div>
                             <div class="pull-right">
                                 <a href="#" class="btn btn-default btn-flat">退出</a>
@@ -103,11 +115,10 @@
     </nav>
 </header>
 
-<aside class="main-sidebar mt-2"style="height: auto;">
-    <!-- overflow-y:auto-->
-    <section class="sidebar" style="height: auto;">
+<aside class="main-sidebar" style="overflow-y: auto;">
+    <section class="sidebar" style="height: 849px;width: auto;">
         <ul class="sidebar-menu"  id="_frame_left_menu">
-            <li style="text-align: center;color: #eee;"><a><i class="header"></i> <span>系统监控</span></a></li>
+            <li class="header" style="text-align: center;color: #eee; font-size: 16px;">系统监控</li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
                 <a class="animated">
                     <span class="pull-right-container">
@@ -118,7 +129,7 @@
                     <span>消防火灾</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="https://blog.csdn.net/carrybest/article/details/54286137"target="center_main" pagetitle="消防火灾报警">
+                    <li><a href="http://localhost:8087/view/baogaoting.aspx"target="center_main" pagetitle="消防火灾报警">
                         <i class="fa fa-arrow-right"></i>消防火灾报警</a></li>
                 </ul>
             </li>
@@ -1065,7 +1076,7 @@
                             <li><a frame_href="#" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
                             <li><a frame_href="#" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
                             <li><a frame_href="#" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
-                            <li><a frame_href="#" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>V
+                            <li><a frame_href="#" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>
                             <li><a frame_href="#" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
                             <li><a frame_href="#" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
                             <li><a frame_href="#" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
@@ -1090,16 +1101,12 @@
                 </ul>
         </ul>
     </section>
+    </section>
     <!-- /.sidebar -->
 </aside>
-<section class="content-wrapper _main-content-wrapper">
-    <section class="content">
-        <div class="center-block" id="LG">
-            <iframe id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
-                    scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
-            </iframe>
-        </div>
-    </section>
-</section>
+
+<iframe class="content-wrapper" id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
+        scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
+</iframe>
 </body>
 </html>
