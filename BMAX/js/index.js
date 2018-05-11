@@ -80,6 +80,7 @@ $(document).ready(
             scrollspeed: 60, // 滚动速度
             mousescrollstep: 40, // 鼠标滚轮的滚动速度 (像素)
             touchbehavior: false, // 激活拖拽滚动
+            cursorheight:30
         });
     }
 );
