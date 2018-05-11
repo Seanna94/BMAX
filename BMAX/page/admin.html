@@ -9,8 +9,6 @@
     <script src="http://cdn.bootcss.com/jquery.nicescroll/3.6.0/jquery.nicescroll.js" type="text/javascript"></script>
     <!-- Bootstrap 3.3.6 -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- Tell the browser to be responsive to screen width -->
-    <!--<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap 3.3.6 -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +33,7 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 
-<header class="main-header" id="_layout_header">
+<header class="main-header" id="_layout_header" id="head">
     <a href="../index.html" class="logo">
         <span class="logo-mini"><b>B</b>P</span>
         <span class="logo-lg"><b>Basepoint</b></span>
@@ -107,7 +105,7 @@
 </header>
 
 <aside class="main-sidebar">
-    <section class="sidebar" style="height: 849px;width: auto;overflow-y: scroll;overflow-x: hidden"id="scro">
+    <section class="sidebar"style="height: 768px;width: auto;overflow-y: scroll;overflow-x: hidden"id="scro">
         <ul class="sidebar-menu"  id="_frame_left_menu">
                 <li class="header"style="text-align: center;color: #eee; font-size: 16px;">系统监控</li>
                 <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
@@ -1096,7 +1094,7 @@
 </aside>
 </div>
 </div>
-<iframe class="content-wrapper" onresize=f() id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
+<iframe class="content-wrapper" onresize=f() id="center" name="center_main" style="display: block; text-align: center;" frameborder="0"frameborder="0"
         scrolling="atuo" marginheight="0" marginwidth="0"  height="30px" width="100%">
 </iframe>
 <script src="../js/index.js"></script>

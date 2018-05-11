@@ -87,8 +87,14 @@ $(document).ready(
 
 function changeFrameHeight(){
     var ifm= document.getElementById("center");
-    ifm.height=document.documentElement.clientHeight-50;
-    ifm.width=document.documentElement.clientWidth-30;
+    var sec=document.getElementById("scro");
+    var head=document.getElementById("head");
+    ht=document.documentElement.clientHeight-head.width;
+    wh=document.documentElement.clientWidth-sec.width;
+    ifm.height=ht;
+    ifm.width=wh;
+    alert("2");
+    sec.height=ht;
 }
 window.onresize=function(){ changeFrameHeight();}
 $(function(){changeFrameHeight();});

@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+    <TITLE>dsd</TITLE>
+</HEAD>
+<body>
+<div id="contral">
+    <table>
+        <tr>
+            <td>
+                <img src="img/d.PNG" width="27" height="14" onclick="clickMove('down')"
+                     title="DOWN" />
+            </td>
+            <td>
+                <img src="img/d.PNG" width="27" height="14" onclick="clickMove('up')"
+                     title="UP" />
+            </td>
+            <td>
+                <img src="img/d.PNG" width="14" height="27" onclick="clickMove('left')"
+                     title="LEFT" />
+            </td>
+            <td>
+                <img src="img/d.PNG" width="14" height="27" onclick="clickMove('right')"
+                     title="RIGHT" />
+            </td>
+            <td>
+                <img src="img/d.PNG" width="25" height="25" onclick="bigit();" title="ZOOM IN" />
+            <td>
+                <img src="img/d.PNG" width="25" height="5" onclick="smallit();" title="ZOOM OUT" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="pubbox kqzl">
+    <div class="pubbox kqzl2" id="picview">
+        <img src="img/a.jpg" width="240" height="449" alt="Moving" name="viewArea"
+             id="viewArea" /><br />
+        <br />
+    </div>
+</div>
+<script src="Scripts/PicDrag.js" type="text/javascript"></script>
+
+</body>
+<script>
+    var rate = 0.2;
+
+    var pp = document.getElementById("viewArea");
+
+    var vv = document.getElementById("picview");
+
+    var ie = document.all;
+
+    var nn6 = document.getElementById && !document.all;
+
+    //是否拖拽（默认否）
+
+    var isdrag = false;
+
+    var y, x; var st, sl;
+
+    //鼠标移动
+    function moveMouse(e) {
+
+    if (isdrag) {
+
+        var mouseX = nn6 ? e.clientX : event.clientX;
+
+        var mouseY = nn6 ? e.clientY : event.clientY;
+
+        vv.scrollTop = st + (y - mouseY);
+
+        vv.scrollLeft = sl + (x - mouseX);
+
+        return false;
+
+    }
+
+    }
+
+    //拖拽
+
+    function initDrag(e) {
+
+        var oDragHandle = nn6 ? e.target : event.srcElement;
+
+        isdrag = true;
+
+        x = nn6 ? e.clientX : event.clientX;
+
+        y = nn6 ? e.clientY : event.clientY;
+
+        st = vv.scrollTop;
+
+        sl = vv.scrollLeft;
+
+        document.onmousemove = moveMouse;
+
+        return false;
+
+    }
+
+    pp.onmousedown = initDrag;
+
+    pp.onmouseup = new Function("isdrag=false");
+
+    //放大
+
+    function bigit() {
+
+        pp.style.height = pp.height * (1 + rate) + "px";
+
+        pp.style.width = pp.width * (1 + rate) + "px";
+
+    }
+
+    //缩小
+    function smallit() {
+
+    pp.style.height = pp.height * (1 - rate) + "px";
+
+    pp.style.width = pp.width * (1 - rate) + "px"; }
+
+    //原始大小
+    function realsize() {
+
+    var newImg = new Image();
+
+    newImg.src = pp.src;
+
+    pp.style.height = newImg.height + "px";
+
+    pp.style.width = newImg.width + "px"; }
+
+    //通过箭头移动图片
+    function clickMove(s) {
+
+    if (s == "up") {
+
+        vv.scrollTop = vv.scrollTop - 100;
+
+    } else if (s == "down") {
+
+        vv.scrollTop = vv.scrollTop + 100;
+
+    } else if (s == "left") {
+
+        vv.scrollLeft = vv.scrollLeft - 100;
+
+    } else if (s == "right") {
+
+        vv.scrollLeft = vv.scrollLeft + 100;
+
+    } }
+
+    //交换图片
+    function changeImage(path) {
+
+    pp.src = path;
+
+    pp.style.width = "600px";
+
+    vv.scrollTop = 0;
+
+    vv.scrollLeft = 0;
+
+    }
+</script>
+</HTML>
