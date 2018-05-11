@@ -6,6 +6,7 @@
     <title>系统监控</title>
     <!-- jQuery 2.2.0 -->
     <script src="../plugins/jQuery/jQuery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="http://cdn.bootcss.com/jquery.nicescroll/3.6.0/jquery.nicescroll.js" type="text/javascript"></script>
     <!-- Bootstrap 3.3.6 -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- Tell the browser to be responsive to screen width -->
@@ -25,7 +26,12 @@
     <![endif]-->
     <!-- AdminLTE App -->
     <script src="../dist/js/app.min.js"></script>
-
+<style>
+    body{
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+</style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 
@@ -100,7 +106,7 @@
     </nav>
 </header>
 
-<aside class="main-sidebar" style="overflow-y: auto;">
+<aside class="main-sidebar" style="overflow-y: auto;overflow-x: hidden"id="scro">
     <section class="sidebar" style="height: 849px;width: auto;">
         <ul class="sidebar-menu"  id="_frame_left_menu">
                 <li class="header"style="text-align: center;color: #eee; font-size: 16px;">系统监控</li>
@@ -114,7 +120,7 @@
                         <span>消防火灾</span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="http://localhost:8087/view/baogaoting.aspx"target="center_main" pagetitle="消防火灾报警">
+                        <li><a href="http://fontawesome.dashgame.com/"target="center_main" pagetitle="消防火灾报警">
                             <i class="fa fa-arrow-right"></i>消防火灾报警</a></li>
                     </ul>
                 </li>
@@ -143,7 +149,7 @@
                                     <i class="fa fa-angle-double-right"></i>1号楼
                                 </a>
                                     <ul class="treeview-menu">
-                                        <li><a href="https://www.baidu.com/" target="center_main" pagetitle="B2F-1"><i class="fa  fa-angle-right"></i>B2F-1</a>
+                                        <li><a href="http://www.jq22.com/yanshi2273" target="center_main" pagetitle="B2F-1"><i class="fa  fa-angle-right"></i>B2F-1</a>
                                         <li><a frame_href="#" pagetitle="B2F-2"><i class="fa fa-angle-right"></i>B2F-2</a></li>
                                         <li><a frame_href="#" pagetitle="B1F-1"><i class="fa fa-angle-right"></i>B1F-1</a></li>
                                         <li><a frame_href="#" pagetitle="B1F-2"><i class="fa fa-angle-right"></i>B1F-2</a></li>
@@ -1090,9 +1096,9 @@
 </aside>
 </div>
 </div>
-<iframe class="content-wrapper" id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
-        scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
+<iframe class="content-wrapper" onresize=f() id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
+        scrolling="atuo" marginheight="0" marginwidth="0"  height="30px" width="100%">
 </iframe>
-<script src="../js/ssbj.js" rel="stylesheet"></script>
+<script src="../js/index.js"></script>
 </body>
 </html>

@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+1.获取屏幕高度
+function f() {
 
-</body>
-</html>
+}
+try{
+var oBody    =    ifrm.document.body;
+var oFrame    =    document.all("iframe");
+
+oFrame.style.height = oBody.scrollHeight + (oBody.offsetHeight - oBody.clientHeight);
+oFrame.style.width = oBody.scrollWidth + (oBody.offsetWidth - oBody.clientWidth);
+}
+//An error is raised if the IFrame domain != its container's domain
+catch(e)
+{
+window.status =    'Error: ' + e.number + '; ' + e.description;
+}
