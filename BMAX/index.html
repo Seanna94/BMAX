@@ -12,7 +12,7 @@
     <!-- AdminLTE App -->
     <script src="dist/js/app.min.js"></script>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap 3.3.6 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -102,68 +102,63 @@
         <ul class="sidebar-menu"  id="_frame_left_menu">
             <li class="header" style="text-align: center;color: #eee;font-size: 16px;">功能菜单</li>
             <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated">
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                <a class="animated"href="#" pagetitle="报警管理" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-exclamation-triangle"></i>
                     <span>报警管理</span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="http://localhost:8082/view/baogaoting.aspx" target="center_main" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
-                    <li><a href="http://localhost:8087/view/baogaoting.aspx" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
+                    <li><a href="#" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated">
-                    <span class="pull-right-container">
+                <a class="animated"href="#" pagetitle="角色管理" class="animated">
+                    <span class="pull-right-container"> </span>
                     <i class="fa fa-angle-left pull-right"></i>
-                </span>
                     <i class="fa fa-users"></i>
                     <span>角色管理</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="https://www.baidu.com" target="center_main" pagetitle="用户角色"><i class="fa fa-circle-thin"></i> 用户角色</a></li>
-                    <li><a frame_href="#" pagetitle="系统监控角色"><i class="fa fa-circle-thin"></i> 系统监控角色</a></li>
+                    <li><a href="#" target="center_main" pagetitle="用户角色"><i class="fa fa-circle-thin"></i> 用户角色</a></li>
+                    <li><a href="#" pagetitle="系统监控角色"><i class="fa fa-circle-thin"></i> 系统监控角色</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a frame_href="#" pagetitle="用户管理" class="animated">
+                <a href="#" pagetitle="用户管理" class="animated">
                     <i class="fa fa-user"></i>
                     <span>用户管理</span>
                 </a>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated">
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                <a class="animated"href="#" pagetitle="模式管理" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-cubes"></i>
                     <span>模式管理</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="模式运行"><i class="fa fa-circle-thin"></i> 模式运行</a></li>
-                    <li><a frame_href="#" pagetitle="模式配置"><i class="fa fa-circle-thin"></i> 模式配置</a></li>
+                    <li><a href="#" pagetitle="模式运行"><i class="fa fa-circle-thin"></i> 模式运行</a></li>
+                    <li><a href="#" pagetitle="模式配置"><i class="fa fa-circle-thin"></i> 模式配置</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated">
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                <a class="animated"href="#" pagetitle="运行日志" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-pencil-square-o"></i>
                     <span>运行日志</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
-                    <li><a frame_href="#" pagetitle="系统运行日志"><i class="fa fa-circle-thin"></i> 系统运行日志</a></li>
+                    <li><a href="#" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
+                    <li><a href="#" pagetitle="系统运行日志"><i class="fa fa-circle-thin"></i> 系统运行日志</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated">
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                <a class="animated"href="#" pagetitle="报表查询" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-bar-chart"></i>
                     <span>报表查询</span>
                 </a>
@@ -172,27 +167,26 @@
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated">
-                     <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                <a class="animated"href="#" pagetitle="系统配置" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-gears"></i>
                     <span>系统配置</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a frame_href="#" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
-                    <li><a frame_href="#" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
-                    <li><a frame_href="#" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
+                    <li><a href="#" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
+                    <li><a href="#" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
+                    <li><a href="#" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
                 </ul>
         </li>
         </ul>
     </section>
     <!-- /.sidebar -->
 </aside>
-<iframe class="content-wrapper" id="center" name="center_main" style="display: block;" frameborder="0"frameborder="0"
-        scrolling="atuo" marginheight="0" marginwidth="0" onLoad="iFrameHeight()" height="30px" width="100%">
+<iframe class="content-wrapper" id="center" name="center_main" style="display: block;min-height: 892px;"
+        frameborder="0"frameborder="0" scrolling="atuo" marginheight="0" marginwidth="0"
+        onLoad="iFrameHeight()" height="100%" width="100%">
 </iframe>
-
 <script src="js/index.js"></script>
 </body>
 </html>
