@@ -89,11 +89,10 @@ function changeFrameHeight(){
     var ifm= document.getElementById("center");
     var sec=document.getElementById("scro");
     var head=document.getElementById("head");
-    ht=document.documentElement.clientHeight-head.width;
-    wh=document.documentElement.clientWidth-sec.width;
+    ht=document.documentElement.clientHeight-55;
+    wh=document.documentElement.clientWidth-55;
     ifm.height=ht;
     ifm.width=wh;
-    alert("2");
     sec.height=ht;
 }
 window.onresize=function(){ changeFrameHeight();}

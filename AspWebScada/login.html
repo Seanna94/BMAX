@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=1,maximum-scale=2" />
+    <title>用户登陆</title>
+    <style type="text/css">
+        .text
+        {
+            border-right: #7f9db9 1px solid;
+            padding-right: 2px;
+            border-top: #7f9db9 1px solid;
+            padding-left: 2px;
+            font-size: 14px;
+            padding-bottom: 2px;
+            border-left: #7f9db9 1px solid;
+            width: 140px;
+            padding-top: 2px;
+            border-bottom: #7f9db9 1px solid;
+            height: 18px;
+        }
+
+        .input
+        {
+            margin-right: 5px;
+            margin-left: 5px;
+            border: 1px solid #a7a4a4;
+            height: 18px;
+            line-height: 18px;
+            font-family: Verdana, Geneva, sans-serif;
+            width: 120px;
+            float: left;
+        }
+
+        .userloginx table tr td
+        {
+            text-align: right;
+            font-family: "微软雅黑", "黑体";
+            font-size: 14px;
+        }
+
+        .userloginx table
+        {
+            text-align: left;
+        }
+
+        .userloginx
+        {
+            background-image: url(images/userlogin.gif);
+            float: right;
+            height: 112px;
+            width: 270px;
+            margin-right: 10px;
+            margin-top: 10px;
+            padding-top: 127px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function login() {
+            $.post("login.ashx", { user: $("#user").val(), pwd: $("#pwd").val() },
+              function (data) {
+                  if (data.login == 1) {
+                      location.href = "default.aspx";
+                  }
+                  else {
+                      alert("用户登录 失败!");
+                  }
+              }, "json");
+        }
+    </script>
+</head>
+
+<body>
+    <br />
+    <div class="userloginx">
+        <table width="270" border="0" cellspacing="0">
+            <tr>
+                <td width="30%">
+                    <strong>帐&nbsp;&nbsp;号:</strong>
+                </td>
+                <td width="70%">
+                    <input name="user" type="text" id="user" tabindex="1" title="用户登录名" class="input" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>密&nbsp;&nbsp;码:</strong>
+                </td>
+                <td>
+                    <input name="pwd" type="password" id="pwd" tabindex="2" class="input" />
+            </tr>
+            <tr>
+                <td>&nbsp;
+                </td>
+                <td>
+                    <span style="float: left; margin-left: 5px;">
+                        <input type="image" name="ImageButton1" id="ImageButton1" onclick="javascript: login();" src="images/login_btn.gif" />
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
