@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>系统监控</title>
+    <!-- jQuery 2.2.0 -->
+    <script src="../plugins/jQuery/jQuery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="http://cdn.bootcss.com/jquery.nicescroll/3.6.0/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 3.3.6 -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="../plugins/animation/loding.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- AdminLTE App -->
+    <script src="../dist/js/app.min.js"></script>
+    <style>
+        body{
+            overflow-y:hidden;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+<header class="main-header" id="_layout_header" id="head">
+    <a href="../index.html" class="logo">
+        <span class="logo-mini"><b>B</b>P</span>
+        <span class="logo-lg"><b>Basepoint</b></span>
+    </a>
+    <nav class="navbar">
+        <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
+        <a href="#" data-toggle="offcanvas" class="sidebar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <ul class="nav navbar-nav topmenu">
+                <li style=""><a class="animated">系统监控</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav nav-sidebar flex-column ">
+                <li class="dropdown">
+                    <a id="link_operationCenter" href="#" class="dropdown-toggle animated" data-toggle="dropdown">
+                    </a>
+                </li>
+
+                <li>
+                    <a id="link_project" title="XX项目"onmousemove="big(this)" onmouseout="normal(this)">龙湖金融中心 </a>
+                </li>
+
+                <li class="dropdown notifications-menu" style="" id="_layout_alarm_notification">
+                    <a href="#" class="dropdown-toggle animated" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-danger" id="_layout_alarm_sumCount">0</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header" id="_layout_alarm_sumCount2">你有0条系统报警信息</li>
+                        <li>
+                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" id="_layout_alarm_list" style="overflow: hidden; width: 100%; height: 200px;"></ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                        </li>
+                        <li class="footer"><a id="_layout_show_allAlarm" href="#" pagetitle="{{Page_Alarm_Title_List}}" frame_href="#">查看全部</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle animated" data-toggle="dropdown">
+                        <img src="../img/a.jpg" id="page_layout_userHead1" class="user-image" onerror="this.src ='/BMAX/Content/AdminLTE/dist/img/avatar5.png'">
+                        <span class="hidden-xs" id="page_layout_userName_top">admin</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="user-header">
+                            <img src="../img/b.jpg" id="page_layout_userHead2" class="img-circle">
+                            <p>
+                                <label id="page_layout_userName_top2">admin</label>
+                                <small id="page_layout_userName_roleName" title="项目管理员">项目管理员</small>
+                            </p>
+                        </li>
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a class="btn btn-default btn-flat btn-sm" myboxup="myboxup_12" id="page_layout_userCenter" pagetitle="个人中心" frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/User/User/MyCenter">个人中心</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="#" class="btn btn-default btn-flat">退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="control-sidebar" class="animated"><i class="fa fa-gears"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<aside class="main-sidebar">
+    <section class="sidebar"style="height:900px;width: auto;overflow-y: scroll;overflow-x: hidden"id="scro">
+        <ul class="sidebar-menu"  id="_frame_left_menu">
+            <li class="header"style="text-align: center;color: #eee; font-size: 16px;">系统监控</li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-paper-plane"></i>
+                    <span>信息发布</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/views/信息发布/信息发布/信息发布.html" target="center_main" pagetitle="信息发布">
+                        <i class="fa fa-arrow-right"></i>信息发布</a></li>
+                </ul>
+            </li>
+            <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="停车管理">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-taxi"></i>
+                    <span>停车管理</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a class="animated" pagetitle="车位引导">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa-arrow-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>
+                            <span>车位引导</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a class="animated" href="/views/信息发布/信息发布/信息发布.html"target="center_main" pagetitle="车位信息">
+                                    <span class="pull-right-container"></span>
+                                    <i class="fa fa-angle-double-right"></i>
+                                   车位信息
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="入侵报警">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-bell"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>入侵报警</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a pagetitle="地上楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地上楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/入侵报警/地上楼层/1F.html" target="center_main" pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/2F.html" target="center_main" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/3F.html" target="center_main" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/4F.html" target="center_main" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/5F.html" target="center_main" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/6F.html" target="center_main" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/7F.html" target="center_main" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/8F.html" target="center_main" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/9F.html" target="center_main" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/10F.html"target="center_main" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/11F.html"target="center_main" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/12F.html"target="center_main" pagetitle="12F"><i class="fa fa-angle-double-right"></i>12F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/13F.html"target="center_main" pagetitle="13F"><i class="fa fa-angle-double-right"></i>13F</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="地下楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地下楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/入侵报警/地上楼层/-1F.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-double-right"></i>-1F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/-2F.html" target="center_main" pagetitle="-2F"><i class="fa fa-angle-double-right"></i>-2F</a></li>
+                            <li><a href="/views/入侵报警/地上楼层/-3F.html" target="center_main" pagetitle="-3F"><i class="fa fa-angle-double-right"></i>-3F</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated"  pagetitle="公共广播">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-bullhorn"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>公共广播</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a  pagetitle="广播终端"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>广播终端</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/公共广播/广播终端/背景音乐.html"target="center_main" pagetitle="背景音乐"><i class="fa fa-angle-double-right"></i></i>背景音乐</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated"  pagetitle="夜景照明">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-video-camera"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>夜景照明</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/views/夜景照明/夜景照明/夜间照明.html"target="center_main" pagetitle="夜间照明"><i class="fa fa-arrow-right"></i>夜间照明</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="智能照明">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-flash"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>智能照明</span>
+                </a>
+                <ul class="treeview-menu">
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    <li>
+                        <a class="animated" href="/views/智能照明/智能照明/照明列表.html"target="center_main" pagetitle="照明列表">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa-arrow-right"></i>照明列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="楼宇自控">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-building"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>楼宇自控</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a class="animated"  pagetitle="冷机群控">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa-arrow-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>冷机群控
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a class="animated" href="/views/楼宇自控/冷机群控/热源/热源.html" target="center_main" pagetitle="热源">
+                                    <span class="pull-right-container"></span>
+                                    <i class="fa fa-angle-double-right"></i>热源
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="animated" pagetitle="变配电">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa-angle-double-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>变配电
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/楼宇自控/变配电/低压配电/TR1.html"target="center_main" pagetitle="低配电压"><i class="fa fa-angle-right"></i>低配电压</a>
+                            <li><a href="/views/楼宇自控/变配电/高压配电/高压配电.html"target="center_main" pagetitle="高配电压"><i class="fa fa-angle-right"></i>高配电压</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="animated" pagetitle="暖通空调">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa-angle-double-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>暖通空调
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/楼宇自控/暖通空调/新风机组/新风机结构图.html" target="center_main" pagetitle="新风机结构图"><i class="fa fa-angle-right"></i>
+                       新风机结构图</a>
+                            </li>
+                        </ul>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/楼宇自控/暖通空调/组合式空调/空调机结构图.html" target="center_main" pagetitle="组合式空调"><i class="fa fa-angle-right"></i>
+                                组合式空调</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="animated" pagetitle="电梯系统">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa-arrow-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>电梯系统
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>  <a class="animated" href="/views/楼宇自控/电梯系统/垂直电梯/升降梯.html" target="center_main" pagetitle="升降梯">
+                                <span class="pull-right-container"></span>
+                                <i class="fa fa-angle-double-right"></i>升降梯
+                            </a>
+                            </li>
+                            <li>
+                                <a class="animated" href="/views/楼宇自控/电梯系统/垂直电梯/扶梯.html"
+                                   target="center_main" pagetitle="扶梯">
+                                <span class="pull-right-container"></span>
+                                <i class="fa fa-angle-double-right"></i>扶梯
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="消防系统">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-fire"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>消防系统</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="地上楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地上楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/消防系统/地上楼层/1F.html" target="center_main" pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/2F.html" target="center_main" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/3F.html" target="center_main" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/4F.html" target="center_main" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/5F.html" target="center_main" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/6F.html" target="center_main" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/7F.html" target="center_main" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/8F.html" target="center_main" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/9F.html" target="center_main" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/10F.html" target="center_main" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/11F.html" target="center_main" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/12F.html" target="center_main" pagetitle="12F"><i class="fa fa-angle-double-right"></i>12F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/13F.html" target="center_main" pagetitle="13F"><i class="fa fa-angle-double-right"></i>13F</a></li>
+                            <li><a href="/views/消防系统/地上楼层/机房.html" target="center_main" pagetitle="机房"><i class="fa fa-angle-double-right"></i>机房</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="地下楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地下楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/消防系统/地下楼层/-1.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-double-right"></i>-1F</a></li>
+                            <li><a href="/views/消防系统/地下楼层/-2.html" target="center_main" pagetitle="-2F"><i class="fa fa-angle-double-right"></i>-2F</a></li>
+                            <li><a href="/views/消防系统/地下楼层/-3.html" target="center_main" pagetitle="-3F"><i class="fa fa-angle-double-right"></i>-3F</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="视频监控">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-television"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>视频监控</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="地上楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地上楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/视频监控/地上楼层/1F.html" target="center_main" pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/2F.html" target="center_main" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/3F.html" target="center_main" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/4F.html" target="center_main" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/5F.html" target="center_main" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/6F.html" target="center_main" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/7F.html" target="center_main" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/8F.html" target="center_main" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/9F.html" target="center_main" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/10F.html" target="center_main" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/11F.html" target="center_main" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/12F.html" target="center_main" pagetitle="12F"><i class="fa fa-angle-double-right"></i>12F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/13F.html" target="center_main" pagetitle="13F"><i class="fa fa-angle-double-right"></i>13F</a></li>
+                            <li><a href="/views/视频监控/地上楼层/机房.html" target="center_main" pagetitle="机房"><i class="fa fa-angle-double-right"></i>机房</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="地下楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地下楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/消防系统/地下楼层/-1F.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-double-right"></i>-1F</a></li>
+                            <li><a href="/views/消防系统/地下楼层/-2F.html" target="center_main"  pagetitle="-2F"><i class="fa fa-angle-double-right"></i>-2F</a></li>
+                            <li><a href="/views/消防系统/地下楼层/-3F.html" target="center_main"  pagetitle="-3F"><i class="fa fa-angle-double-right"></i>-3F</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="门禁管理">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-credit-card"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>门禁管理</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a frame_href="#" pagetitle="地上楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地上楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/门禁管理/地上楼层/1F.html" target="center_main"  pagetitle="1F"><i class="fa fa-angle-double-right"></i>1F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/2F.html" target="center_main" pagetitle="2F"><i class="fa fa-angle-double-right"></i>2F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/3F.html" target="center_main" pagetitle="3F"><i class="fa fa-angle-double-right"></i>3F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/4F.html" target="center_main" pagetitle="4F"><i class="fa fa-angle-double-right"></i>4F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/5F.html" target="center_main" pagetitle="5F"><i class="fa fa-angle-double-right"></i>5F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/6F.html" target="center_main" pagetitle="6F"><i class="fa fa-angle-double-right"></i>6F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/7F.html" target="center_main" pagetitle="7F"><i class="fa fa-angle-double-right"></i>7F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/8F.html" target="center_main" pagetitle="8F"><i class="fa fa-angle-double-right"></i>8F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/9F.html" target="center_main" pagetitle="9F"><i class="fa fa-angle-double-right"></i>9F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/10F.html" target="center_main" pagetitle="10F"><i class="fa fa-angle-double-right"></i>10F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/11F.html" target="center_main" pagetitle="11F"><i class="fa fa-angle-double-right"></i>11F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/12F.html" target="center_main" pagetitle="12F"><i class="fa fa-angle-double-right"></i>12F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/13F.html" target="center_main" pagetitle="13F"><i class="fa fa-angle-double-right"></i>13F</a></li>
+                            <li><a href="/views/门禁管理/地上楼层/机房.html" target="center_main" pagetitle="机房"><i class="fa fa-angle-double-right"></i>机房</a></li>
+                        </ul>
+                    </li>
+                    <li><a frame_href="#" pagetitle="地下楼层"><i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-angle-left pull-right"></i>地下楼层</a>
+                        <ul class="treeview-menu">
+                            <li><a href="/views/门禁管理/地下楼层/-1F.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-double-right"></i>-1F</a></li>
+                            <li><a href="/views/门禁管理/地下楼层/-2F.html" target="center_main" pagetitle="-2F"><i class="fa fa-angle-double-right"></i>-2F</a></li>
+                            <li><a href="/views/门禁管理/地下楼层/-3F.html" target="center_main" pagetitle="-3F"><i class="fa fa-angle-double-right"></i>-3F</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.sidebar -->
+    </section>
+</aside>
+</div>
+</div>
+<iframe class="content-wrapper" onresize=f() id="center" name="center_main" style="display: block; text-align: center;" frameborder="0"frameborder="0"
+        scrolling="atuo" marginheight="0" marginwidth="0"  height="30px" width="100%">
+</iframe>
+<script src="../js/index.js"></script>
+</body>
+</html>
