@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.js"></script>
+
 </head>
 
 <body class="breadcrumb login-page">
-<div class="login-box">
+<div class="login-box" id="reg">
     <div class="login-logo">
        <img src="img/logo.png"style="width: 30% ;height:30%"> <a>通久电子</a>
     </div>
@@ -49,5 +51,24 @@
         </form>
     </div>
 </div>
+<script>
+$().ready(function(){
+$("#reg").validate({
+    //rules 用于对表单内容进行约束
+ rules : {
+username:"required",  //用于控制用户名输入框必填
+password:"required",
+checkpassword : {  //多个约束条件的时候，可以用大括号包起来
+required : true
+},
+
+},
+messages : {    //messages 用于验证的时候在页面上输出提示信息，要注意的是messages与rules是一一对应的
+username : "请输入用户名",
+password : "请输入密码",
+}
+});
+});
+</script>
 </body>
 </html>

@@ -84,17 +84,10 @@ $(document).ready(
         });
     }
 );
-
-function changeFrameHeight(){
-    var ifm= document.getElementById("center");
-    var sec=document.getElementById("scro");
-    var head=document.getElementById("head");
-    ht=document.documentElement.clientHeight-55;
-    wh=document.documentElement.clientWidth-55;
-    ifm.height=ht;
-    ifm.width=wh;
-    sec.height=ht;
-}
+    function changeFrameHeight(){
+        var ifm= document.getElementById("center");
+        ifm.width=$(document).width()-230;
+    }
 window.onresize=function(){ changeFrameHeight();}
 $(function(){changeFrameHeight();});
 
