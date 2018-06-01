@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+    <script>
+        function MM_swapImgRestore() { //v3.0
+            var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+            var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+                var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+                d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+            if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+            for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+            if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+                if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+    </script>
+    <style type="text/css">
+        *{margin:0;padding:0;
+        }
+
+        #right_box{
+            float:left;
+            height:480px;
+            width:240px;
+            margin-left: 10px;
+            margin-top: -490px;
+            cursor:pointer;
+        }
+        #bg{
+            position:absolute;
+            height:480px;
+            width:240px;
+            margin-left: 710px;
+            margin-top: 10px;
+        }
+        #ico1{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 628px;
+            top: 29px;
+            cursor:pointer;
+        }
+        #ico2{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 816px;
+            top: 29px;
+            cursor:pointer;
+        }
+        #ico3{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 823px;
+            top: 29px;
+            cursor:pointer;
+        }
+        #ico4{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 748px;
+            top: 99px;
+            cursor:pointer;
+        }
+        #ico5{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 883px;
+            top: 99px;
+            cursor:pointer;
+        }
+        #ico6{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 788px;
+            top: 166px;
+            cursor:pointer;
+        }
+        #ico7{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 816px;
+            top: 166px;
+            cursor:pointer;
+        }
+        #ico8{
+            position:absolute;
+            height:50px;
+            width:50px;
+            left: 923px;
+            top: 166px;
+            cursor:pointer;
+        }
+        #ico9{
+            position:absolute;
+            height:30px;
+            width:30px;
+            left: 758px;
+            top: 263px;
+            cursor:pointer;
+        }
+        #ico10{
+            position:absolute;
+            height:30px;
+            width:30px;
+            left: 898px;
+            top: 263px;
+            cursor:pointer;
+        }
+        #ico11{
+            position:absolute;
+            height:30px;
+            width:30px;
+            left: 758px;
+            top: 314px;
+            cursor:pointer;
+        }
+        #ico12{
+            position:absolute;
+            height:30px;
+            width:30px;
+            left: 898px;
+            top: 314px;
+            cursor:pointer;
+        }
+        #ico13{
+            position:absolute;
+            height:93px;
+            width:206px;
+            left: 781px;
+            top: 374px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+<div id="mydiv" style="height: 480px;width:720px ;" >
+<video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered"
+       controls preload="auto" width="720" height="480" position="absolute"
+   data-setup="{}" >
+    <source src="img/video2.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+</video>
+</div>
+<div id="right_box">
+    <img ID="bg" src="img/BG.png">
+    <div id="ico2" onmousedown="PTZCC(3)"  onmouseup="PTZCC(7)"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','img/VIEWINGMAX-22.png',1)"><img src="img/VIEWINGMAX-13.png" name="Image14" width="50" height="50" border="0" id="Image14" /></a></div>
+    <div id="ico4" onmousedown="PTZCC(1)"  onmouseup="PTZCC(7)"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','img/VIEWINGMAX-24.png',1)"><img src="img/VIEWINGMAX-15.png" name="Image16" width="50" height="50" border="0" id="Image16" /></a></div>
+    <div id="ico5" onmousedown="PTZCC(2)"  onmouseup="PTZCC(7)"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','img/VIEWINGMAX-26.png',1)"><img src="img/VIEWINGMAX-17.png" name="Image17" width="50" height="50" border="0" id="Image17" /></a></div>
+    <div id="ico7" onmousedown="PTZCC(4)"  onmouseup="PTZCC(7)"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','img/VIEWINGMAX-28.png',1)"><img src="img/VIEWINGMAX-19.png" name="Image19" width="50" height="50" border="0" id="Image19" /></a></div>
+    <div id="ico9" onmousedown="PTZCC(5)"  onmouseup="PTZCC(7)"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image21','','img/VIEWINGMAX-31.png',1)"><img src="img/VIEWINGMAX-33.png" name="Image21" width="30" height="30" border="0" id="Image21" /></a></div>
+    <div id="ico10" onmousedown="PTZCC(6)" onmouseup="PTZCC(7)"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','img/VIEWINGMAX-32.png',1)"><img src="img/VIEWINGMAX-34.png" name="Image22" width="30" height="30" border="0" id="Image22" /></a></div>
+    <div id="ico11" onclick="DoStartVideo()"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23','','img/VIEWINGMAX-25.png',1)"><img src="img/VIEWINGMAX-59.png" name="Image23" width="30" height="30" border="0" id="Image23" /></a></div>
+    <div id="ico12" onclick="DoStopVideo()"><a  onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image24','','img/VIEWINGMAX-60.png',1)"><img src="img/VIEWINGMAX-16.png" name="Image24" width="30" height="30" border="0" id="Image24" /></a></div>
+
+    <!--0x0302-放大、0x0301-停止放大、0x0304-缩小、0x0303停止缩小、0x0402向上、0x0401向上停止、0x0404向下、0x0403向下停止、0x0502向右、0x0501停止向右、0x0504向左、0x0503停止向左、0x0702左上、0x0701左上停止、0x0704左下、0x0703左下停止、0x0802右上、0x0801右上停止、0x0804右下、0x0803右下停止-->
+</div>
+
+<script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+<script src="plugins/jQuery/jQuery-2.2.0.min.js" type="text/javascript"></script>
+<script>
+
+    $(function(){
+        $(window).resize();
+    });
+</script>
+</body>
