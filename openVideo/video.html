@@ -155,8 +155,8 @@
 
 <body>
 <div id="mydiv" style="height: 480px;width:720px ;" >
-<video id="my-video" autoplay="autoplay" class="video-js vjs-default-skin vjs-big-play-centered"
-       controls preload="auto" width="720" height="480" position="absolute"
+<video id="my-video" autoplay="autoplay" loop="loop" class="video-js vjs-default-skin vjs-big-play-centered"
+        preload="auto" width="720" height="480" position="absolute"
    data-setup="{}" >
     <source src="img/video2.mp4" type='video/mp4'>
     <p class="vjs-no-js">
@@ -183,7 +183,10 @@
 <script>
 
     $(function(){
-        $(window).resize();
-    });
+            var video=document.getElementById("my-video");
+            alert(video);
+            video.controls=false;
+        });
+
 </script>
 </body>
