@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				
+				
+			}
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				alert("文件列表："+localStorage.getItem("文件列表"));
+				alert("终端列表："+localStorage.getItem("终端列表"));
+				
+				$("#save_menu").click(function(){
+					for(var i= 0;i<$("input[type='text']").length;i++){
+						localStorage.setItem("left_menu_"+i,$("input[type='text']").eq(i).val());
+						
+					}
+					alert("保存成功！");
+				});
+
+			});
+			
+		</script>
+	</head> 
+	<body>
+		<div style="margin: 0 atuo;">
+			<h1>系统左边菜单</h1>
+			<table style="margin: 10px atuo;">
+				<thead>
+					<th>菜单编号</th>
+					<th>菜单文本</th>
+				</thead>
+				<tr>
+					<td>
+						1
+					</td>
+					<td>
+						<input type="text" placeholder="文本" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						2
+					</td>
+					<td>
+						<input type="text" placeholder="文本" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						3
+					</td>
+					<td>
+						<input type="text" placeholder="文本" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						4
+					</td>
+					<td>
+						<input type="text" placeholder="文本" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						5
+					</td>
+					<td>
+						<input type="text" placeholder="文本" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						5
+					</td>
+					<td>
+						<input type="text" placeholder="文本" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input id="save_menu" type="button" value="保存" />
+					</td>
+					
+				</tr>
+			</table>
+			
+		</div>
+	</body>
+</html>

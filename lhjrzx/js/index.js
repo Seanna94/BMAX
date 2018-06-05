@@ -28,12 +28,11 @@ function changeFrameWidth(){
 window.onresize=function(){
     changeFrameWidth();
 }
-$(function(){
+
+
+$(function() {
     changeFrameWidth();
 });
-
-
-
 
 
 

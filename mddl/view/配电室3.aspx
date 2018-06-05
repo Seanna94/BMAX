@@ -15,7 +15,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=1470,height=996,initial-scale=0.5,minimum-scale=0.5,maximum-scale=5,user-scalable=yes" />
+<meta name="viewport" content="width=1865,height=996,initial-scale=0.5,minimum-scale=0.5,maximum-scale=5,user-scalable=yes" />
 <title>配电室3</title>
 <link href="../styles/style.css" rel="stylesheet" />
 <script src="../js/jquery.min.js"></script>
@@ -23,7 +23,7 @@
 
 
 <script type="text/javascript">
-grfwidth = 1470;
+grfwidth = 1865;
 grfheight = 996;
 var tagcount = 1;
 db["second"]={tagname:"second",type:"",value:"",state:"0",alarm:0,htmlobj: new Array()};
@@ -124,6 +124,24 @@ var tagdatacontrol38=new analogObj('tagdatacontrol38',2,'');
 db["second"].htmlobj.push(tagdatacontrol38);
 var tagdatacontrol39=new analogObj('tagdatacontrol39',2,'');
 db["second"].htmlobj.push(tagdatacontrol39);
+var tagdatacontrol40=new analogObj('tagdatacontrol40',2,'');
+db["second"].htmlobj.push(tagdatacontrol40);
+var tagdatacontrol41=new analogObj('tagdatacontrol41',2,'');
+db["second"].htmlobj.push(tagdatacontrol41);
+var tagdatacontrol42=new analogObj('tagdatacontrol42',2,'');
+db["second"].htmlobj.push(tagdatacontrol42);
+var tagdatacontrol43=new analogObj('tagdatacontrol43',2,'');
+db["second"].htmlobj.push(tagdatacontrol43);
+var tagdatacontrol44=new analogObj('tagdatacontrol44',2,'');
+db["second"].htmlobj.push(tagdatacontrol44);
+var tagdatacontrol45=new analogObj('tagdatacontrol45',2,'');
+db["second"].htmlobj.push(tagdatacontrol45);
+var tagdatacontrol46=new analogObj('tagdatacontrol46',2,'');
+db["second"].htmlobj.push(tagdatacontrol46);
+var tagdatacontrol47=new analogObj('tagdatacontrol47',2,'');
+db["second"].htmlobj.push(tagdatacontrol47);
+var tagdatacontrol48=new analogObj('tagdatacontrol48',2,'');
+db["second"].htmlobj.push(tagdatacontrol48);
 
 
 if (tagcount>0){postupdate();}
@@ -137,10 +155,10 @@ function imgdragstart(){return false;}
 <body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" bgcolor="#26425B">
 <div id="fscada">
 <img src="Images/配电室3.png" border="0" />
-<div id="xianshi2" style="position:absolute;line-height:40px;left:1px;width:548px;height:40px;top:16px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >>>电表系统 >>> 配电室1</div>
-<button id="button51" style="position:absolute;cursor:pointer;left:407px;width:100px;height:56px;top:71px;font-family:'宋体','Serif';font-style:normal;font-size:25px;font-weight:normal;background-color:rgb(0,0,255);color:rgb(255,255,255);" onclick="javascript:button51_js();">1-12</button>
-<button id="button52" style="position:absolute;cursor:pointer;left:615px;width:100px;height:56px;top:71px;font-family:'宋体','Serif';font-style:normal;font-size:25px;font-weight:normal;background-color:rgb(0,0,255);color:rgb(255,255,255);" onclick="javascript:button52_js();">13-24</button>
-<button id="button53" style="position:absolute;cursor:pointer;left:831px;width:100px;height:56px;top:71px;font-family:'宋体','Serif';font-style:normal;font-size:25px;font-weight:normal;background-color:rgb(0,0,255);color:rgb(255,255,255);" onclick="javascript:button53_js();">25-30</button>
+<div id="xianshi2" style="position:absolute;line-height:40px;left:1px;width:548px;height:40px;top:16px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >>>供配电系统 >>> 配电室3</div>
+<button id="button51" style="position:absolute;cursor:pointer;left:639px;width:100px;height:56px;top:71px;font-family:'宋体','Serif';font-style:normal;font-size:25px;font-weight:normal;background-color:rgb(0,0,255);color:rgb(255,255,255);" onclick="javascript:button51_js();">1-12</button>
+<button id="button52" style="position:absolute;cursor:pointer;left:847px;width:100px;height:56px;top:71px;font-family:'宋体','Serif';font-style:normal;font-size:25px;font-weight:normal;background-color:rgb(0,0,255);color:rgb(255,255,255);" onclick="javascript:button52_js();">13-24</button>
+<button id="button53" style="position:absolute;cursor:pointer;left:1063px;width:100px;height:56px;top:71px;font-family:'宋体','Serif';font-style:normal;font-size:25px;font-weight:normal;background-color:rgb(0,0,255);color:rgb(255,255,255);" onclick="javascript:button53_js();">25-30</button>
 <img id="imageex3" style="position:absolute;border:0px;left:65px;top:211px;width:80px;height:130px;" src="images/电表.png" />
 <div id="xianshi3" style="position:absolute;line-height:28px;left:162px;width:50px;height:28px;top:232px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
 <div id="tagdatacontrol4" style="position:absolute;line-height:-2147483648px;left:220px;width:-2147483648px;height:-2147483648px;top:232px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
@@ -261,7 +279,37 @@ function imgdragstart(){return false;}
 <div id="xianshi73" style="position:absolute;line-height:28px;left:1242px;width:50px;height:28px;top:855px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电量:</div>
 <div id="tagdatacontrol39" style="position:absolute;line-height:-2147483648px;left:1300px;width:-2147483648px;height:-2147483648px;top:854px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
 <div id="xianshi74" style="position:absolute;line-height:28px;left:1355px;width:56px;height:28px;top:855px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >kW/h</div>
-<iframe src="" id="dainbiao_child" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;left:0px;width:1470px;height:860px;top:140px;"></iframe>
+<img id="imageex15" style="position:absolute;border:0px;left:1505px;top:211px;width:80px;height:130px;" src="images/电表.png" />
+<div id="xianshi75" style="position:absolute;line-height:28px;left:1602px;width:50px;height:28px;top:232px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
+<div id="tagdatacontrol40" style="position:absolute;line-height:-2147483648px;left:1660px;width:-2147483648px;height:-2147483648px;top:232px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi76" style="position:absolute;line-height:28px;left:1727px;width:24px;height:28px;top:232px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >V</div>
+<div id="xianshi77" style="position:absolute;line-height:28px;left:1602px;width:50px;height:28px;top:269px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
+<div id="tagdatacontrol41" style="position:absolute;line-height:-2147483648px;left:1660px;width:-2147483648px;height:-2147483648px;top:269px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi78" style="position:absolute;line-height:28px;left:1726px;width:24px;height:28px;top:269px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >I</div>
+<div id="xianshi79" style="position:absolute;line-height:28px;left:1602px;width:50px;height:28px;top:303px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电量:</div>
+<div id="tagdatacontrol42" style="position:absolute;line-height:-2147483648px;left:1660px;width:-2147483648px;height:-2147483648px;top:302px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi80" style="position:absolute;line-height:28px;left:1715px;width:56px;height:28px;top:303px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >kW/h</div>
+<img id="imageex16" style="position:absolute;border:0px;left:1513px;top:491px;width:80px;height:130px;" src="images/电表.png" />
+<div id="xianshi81" style="position:absolute;line-height:28px;left:1610px;width:50px;height:28px;top:512px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
+<div id="tagdatacontrol43" style="position:absolute;line-height:-2147483648px;left:1668px;width:-2147483648px;height:-2147483648px;top:512px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi82" style="position:absolute;line-height:28px;left:1735px;width:24px;height:28px;top:512px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >V</div>
+<div id="xianshi83" style="position:absolute;line-height:28px;left:1610px;width:50px;height:28px;top:549px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
+<div id="tagdatacontrol44" style="position:absolute;line-height:-2147483648px;left:1668px;width:-2147483648px;height:-2147483648px;top:549px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi84" style="position:absolute;line-height:28px;left:1734px;width:24px;height:28px;top:549px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >I</div>
+<div id="xianshi85" style="position:absolute;line-height:28px;left:1610px;width:50px;height:28px;top:583px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电量:</div>
+<div id="tagdatacontrol45" style="position:absolute;line-height:-2147483648px;left:1668px;width:-2147483648px;height:-2147483648px;top:582px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi86" style="position:absolute;line-height:28px;left:1723px;width:56px;height:28px;top:583px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >kW/h</div>
+<img id="imageex17" style="position:absolute;border:0px;left:1521px;top:763px;width:80px;height:130px;" src="images/电表.png" />
+<div id="xianshi87" style="position:absolute;line-height:28px;left:1618px;width:50px;height:28px;top:784px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
+<div id="tagdatacontrol46" style="position:absolute;line-height:-2147483648px;left:1676px;width:-2147483648px;height:-2147483648px;top:784px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi88" style="position:absolute;line-height:28px;left:1743px;width:24px;height:28px;top:784px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >V</div>
+<div id="xianshi89" style="position:absolute;line-height:28px;left:1618px;width:50px;height:28px;top:821px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电压:</div>
+<div id="tagdatacontrol47" style="position:absolute;line-height:-2147483648px;left:1676px;width:-2147483648px;height:-2147483648px;top:821px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi90" style="position:absolute;line-height:28px;left:1742px;width:24px;height:28px;top:821px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >I</div>
+<div id="xianshi91" style="position:absolute;line-height:28px;left:1618px;width:50px;height:28px;top:855px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(255,255,255);" >电量:</div>
+<div id="tagdatacontrol48" style="position:absolute;line-height:-2147483648px;left:1676px;width:-2147483648px;height:-2147483648px;top:854px;font-family:'楷体','Serif';font-style:normal;font-size:20px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<div id="xianshi92" style="position:absolute;line-height:28px;left:1731px;width:56px;height:28px;top:855px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(255,255,255);" >kW/h</div>
+<iframe src="" id="dainbiao_child1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;left:0px;width:1865px;height:860px;top:140px;"></iframe>
 
 </div>
 
