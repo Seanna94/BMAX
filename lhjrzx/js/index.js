@@ -32,7 +32,7 @@ window.onresize=function(){
 
 $(function() {
     changeFrameWidth();
-    
+
 });
 
 
