@@ -9,12 +9,11 @@
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
     <script src="../plugins/chart.js/Chart.js"></script>
+    <link href="../plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body style="background-color: #edf1f5 ;height: 100% ;margin-left: 13px;margin-right: 13px">
 <div class="margin" >
     <button type="button" class="btn btn-info">实时报警</button>
-    <button type="button" class="close" aria-label="Close" style="position: absolute;left: 103px;top: 1px ;color: red">
-        <span aria-hidden="true">&times;</span></button>
 </div>
 <div class="row" id="page_alarm_alarm_index">
     <div class="col-xs-12">
@@ -127,12 +126,18 @@
                                     <option value="203">已处理</option>
                                 </select>
                             </div>
+                            <div class="box-tools pull-right">
+                                <div class="btn-group">
+                                    <button type="reset" class="btn btn-default btn-xs btn-flat animated" title="重置"><i class="fa fa-undo"></i></button>
+                                    <button type="button" class="btn btn-default btn-xs btn-flat animated" title="查询" id="page_user_user_index_sel_btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
                 <div class="row margin">
                     <div class="col-lg-12 col-md-12">
-                        <table class="table table-hover">
+                        <table class="table table-hover text-center">
                             <thead>
                             <tr class="bg-aqua">
                                 <th>报警时间</th>
@@ -140,6 +145,7 @@
                                 <th>位置联动</th>
                                 <th>视频联动</th>
                                 <th>联动预案</th>
+                                <th>处理状态</th>
                                 <th>处理意见</th>
                             </tr>
                             </thead>
@@ -149,6 +155,7 @@
                                 <td>位置联动</td>
                                 <td>视频联动</td>
                                 <td>联动预案</td>
+                                <td>已处理</td>
                                 <td>立即处理</td>
                             </tr>
                             <tr>
@@ -157,6 +164,7 @@
                                 <td>位置联动</td>
                                 <td>视频联动</td>
                                 <td>联动预案</td>
+                                <td>处理中</td>
                                 <td>立即处理</td>
                             </tr>
                             <tr>
@@ -165,6 +173,7 @@
                                 <td>位置联动</td>
                                 <td>视频联动</td>
                                 <td>联动预案</td>
+                                <td>已处理</td>
                                 <td>立即处理</td>
                             </tr>
                             <tr>
@@ -173,6 +182,7 @@
                                 <td>位置联动</td>
                                 <td>视频联动</td>
                                 <td>联动预案</td>
+                                <td>未处理</td>
                                 <td>立即处理</td>
                             </tr>
                             <tr>
@@ -181,37 +191,30 @@
                                 <td>位置联动</td>
                                 <td>视频联动</td>
                                 <td>联动预案</td>
+                                <td>未处理</td>
                                 <td>立即处理</td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12">
-                    <div class="row">
-                    <div class="col-lg-4 col-md-8">
-                        显示第1到第5条记录，总共10条记录，每页显示
-                        <select>
-                            <option value="10">5</option>
-                            <option value="301">10</option>
-                            <option value="302">20</option>
-                            <option value="303">40</option>
-                        </select>条记录
-                    </div>
-                    <div class="col-lg-4 col-md-8">
-                    </div>
-                        <div class="col-lg-4 col-md-8">
-                            <ul class="pagination">
-                                <li><a href="#">首页</a></li>
-                                <li><a href="#">上一页</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">...</a></li>
-                                <li><a href="#">下一页</a></li>
-                                <li><a href="#">末页</a></li>
-                            </ul>
-                        </div>
-                </div>
+                    显示第1到第5条记录，总共10条记录，每页显示
+                    <select>
+                        <option value="10">5</option>
+                        <option value="301">10</option>
+                        <option value="302">20</option>
+                        <option value="303">40</option>
+                    </select>条记录
+                    <ul class="pagination pull-right">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">上一页</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">下一页</a></li>
+                        <li><a href="#">末页</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
