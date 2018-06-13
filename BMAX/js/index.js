@@ -86,7 +86,7 @@ $(document).ready(
 );
     function changeFrameHeight(){
         var ifm= document.getElementById("center");
-        ifm.width=$(document).width()-346;
+        ifm.width=$(document).width()-230;
     }
 window.onresize=function(){ changeFrameHeight();}
 $(function(){changeFrameHeight();});
