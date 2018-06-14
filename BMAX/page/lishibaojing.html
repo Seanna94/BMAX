@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
     <script src="../plugins/chart.js/Chart.js"></script>
     <link href="../plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap-daterangepicker/2.1.25/daterangepicker.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap-daterangepicker/2.1.25/moment.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-daterangepicker/2.1.25/daterangepicker.js"></script>
 </head>
 <body style="background-color: #edf1f5 ;height: 100% ;margin-left: 13px;margin-right: 13px">
 <div class="margin" >
@@ -111,8 +114,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" class="form-control datepickerRange"
-                                                   id="page_alarm_alarm_index_sel_alarmTime" readonly="readonly">
+                                            <input type="text" id="config-demo" class="form-control">
                                         </div>
                                         <input type="hidden" class="form-control" id="page_alarm_alarm_index_sel_alarmTime_begin">
                                         <input type="hidden" class="form-control" id="page_alarm_alarm_index_sel_alarmTime_end">
@@ -208,6 +210,7 @@
 </div>
 
 <script>
+    //统计图
     var data = {
         labels: [
             "紧急报警",
@@ -233,6 +236,34 @@
     var myBarChart = new Chart(ctx, {
         type: 'pie',
         data: data,
+    });
+
+    //日历
+    var beginTimeStore = '';
+    var endTimeStore = '';
+    $('#config-demo').daterangepicker({
+        "timePicker": true,
+        "timePicker24Hour": true,
+        "linkedCalendars": false,
+        "autoUpdateInput": false,
+        autoApply:true,
+        "locale": {
+            format: 'YYYY-MM-DD',
+            separator: ' ~ ',
+            applyLabel: "应用",
+            cancelLabel: "取消",
+            resetLabel: "重置",
+        }
+    }, function(start, end, label) {
+        beginTimeStore = start;
+        endTimeStore = end;
+        console.log(this.startDate.format(this.locale.format));
+        console.log(this.endDate.format(this.locale.format));
+        if(!this.startDate){
+            this.element.val('');
+        }else{
+            this.element.val(this.startDate.format(this.locale.format) + this.locale.separator + this.endDate.format(this.locale.format));
+        }
     });
 </script>
 </body>
