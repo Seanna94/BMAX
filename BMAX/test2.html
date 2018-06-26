@@ -1,58 +1,174 @@
-1.获取屏幕高度
-function f() {
-
-}
-try{
-var oBody    =    ifrm.document.body;
-var oFrame    =    document.all("iframe");
-
-oFrame.style.height = oBody.scrollHeight + (oBody.offsetHeight - oBody.clientHeight);
-oFrame.style.width = oBody.scrollWidth + (oBody.offsetWidth - oBody.clientWidth);
-}
-//An error is raised if the IFrame domain != its container's domain
-catch(e)
-{
-window.status =    'Error: ' + e.number + '; ' + e.description;
-}
-
-
-//三角点击变方向
-<ul class="treeview-menu">
-    <li><a frame_href="#" pagetitle="电子地图">
-        <i class="fa fa-arrow-right"></i>
-        <span class="pull-right-container"></span>
-        <i class="fa fa-angle-left pull-right"></i>电子地图
-    </a>
-        <ul class="treeview-menu">
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="东楼1F"><i class="fa fa-angle-right"></i>东楼1F</a></li>
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="东楼2F"><i class="fa fa-angle-right"></i>东楼2F</a></li>
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="西楼1F"><i class="fa fa-angle-right"></i>西楼1F</a></li>
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="西楼2F"><i class="fa fa-angle-right"></i>西楼2F</a></li>
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="主楼1F"><i class="fa fa-angle-right"></i>主楼1F</a></li>
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="主楼2F"><i class="fa fa-angle-right"></i>主楼2F</a></li>
-            <li><a href="http://fontawesome.dashgame.com/" target="center_main" pagetitle="主楼3F"><i class="fa fa-angle-right"></i>主楼3F</a></li>
-        </ul>
-    </li>
-</ul>
-
-
-第一层：
-<a class="animated" href="#" pagetitle="能源计量">
-    <span class="pull-right-container"></span>
-    <i class="fa fa-calculator"></i>
-    <i class="fa fa-angle-left pull-right"></i>能源计量
-</a>
-
-第二层
-<a class="animated" href="#" pagetitle="能量表">
-    <span class="pull-right-container"></span>
-    <i class="fa fa-arrow-right"></i>
-    <i class="fa fa-angle-left pull-right"></i>能量表
-</a>
-
-第三层
-<a class="animated" href="#" pagetitle="1号楼">
-    <span class="pull-right-container"></span>
-    <i class="fa fa-angle-double-right"></i>
-    <i class="fa fa-angle-left pull-right"></i>1号楼
-</a>
+<!DOCTYPE html>
+<html xml:lang='en'>
+<head>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    <meta http-equiv='content-language' content='en-us' />
+    <title>CheckBox select</title>
+    <script src="plugins/jQuery/jQuery-2.2.0.min.js" type="text/javascript"></script>
+    <script type='text/javascript' >
+        $(document).ready(function(){
+            /****----全选----****/
+//$('#check1').on('change',function(){
+//$("#check1").bind("click",function(){
+            $('#check1').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('input').prop('checked',true);
+                }
+                else{
+                    $('input').prop('checked',false);
+                }
+                if($(".do").text()=="全选"){
+                    $(".do").text("取消");
+                }
+                else{
+                    $(".do").text("全选");
+                }
+//方法二
+//$('input[type=checkbox]').prop('checked',$(this).prop('checked'));
+            });
+            /****----第一列----****/
+            $('#checkl1').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check11,#check21,#check31,#check41,#check51').prop('checked',true);
+                }
+                else{
+                    $('#check11,#check21,#check31,#check41,#check51').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第二列----****/
+            $('#checkl2').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check12,#check22,#check32,#check42,#check52').prop('checked',true);
+                }
+                else{
+                    $('#check12,#check22,#check32,#check42,#check52').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第三列----****/
+            $('#checkl3').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check13,#check23,#check33,#check43,#check53').prop('checked',true);
+                }
+                else{
+                    $('#check13,#check23,#check33,#check43,#check53').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第四列----****/
+            $('#checkl4').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check14,#check24,#check34,#check44,#check54').prop('checked',true);
+                }
+                else{
+                    $('#check14,#check24,#check34,#check44,#check54').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第一行----****/
+            $('#checkh1').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check11,#check12,#check13,#check14').prop('checked',true);
+                }else{
+                    $('#check11,#check12,#check13,#check14').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第二行----****/
+            $('#checkh2').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check21,#check22,#check23,#check24').prop('checked',true);
+                }else{
+                    $('#check21,#check22,#check23,#check24').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第三行----****/
+            $('#checkh3').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check31,#check32,#check33,#check34').prop('checked',true);
+                }else{
+                    $('#check31,#check32,#check33,#check34').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第四行----****/
+            $('#checkh4').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check41,#check42,#check43,#check44').prop('checked',true);
+                }else{
+                    $('#check41,#check42,#check43,#check44').prop('checked',false);
+                }
+//方法二 如上
+            });
+            /****----第五行----****/
+            $('#checkh5').on('click',function(){
+//方法一
+                if(this.checked==true){
+                    $('#check51,#check52,#check53,#check54').prop('checked',true);
+                }else{
+                    $('#check51,#check52,#check53,#check54').prop('checked',false);
+                }
+//方法二 如上
+            });
+        });
+    </script>
+</head>
+<body>
+<table style="width:50%;">
+    <tr>
+        <td><input type="checkbox" id = "check1" /><label for="check1" class="do">全选</label></td>
+        <td><input type="checkbox" id = "checkl1" /><label for="checkl1">第一列</label></td>
+        <td><input type="checkbox" id = "checkl2" /><label for="checkl2">第二列</label></td>
+        <td><input type="checkbox" id = "checkl3" /><label for="checkl3">第三列</label></td>
+        <td><input type="checkbox" id = "checkl4" /><label for="checkl4">第四列</label></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id = "checkh1" /><label for="checkh1">第一行</label></td>
+        <td><input type="checkbox" id = "check11" /></td>
+        <td><input type="checkbox" id = "check12" /></td>
+        <td><input type="checkbox" id = "check13" /></td>
+        <td><input type="checkbox" id = "check14" /></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id = "checkh2" /><label for="checkh2">第二行</label></td>
+        <td><input type="checkbox" id = "check21" /></td>
+        <td><input type="checkbox" id = "check22" /></td>
+        <td><input type="checkbox" id = "check23" /></td>
+        <td><input type="checkbox" id = "check24" /></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id = "checkh3" /><label for="checkh3">第三行</label></td>
+        <td><input type="checkbox" id = "check31" /></td>
+        <td><input type="checkbox" id = "check32" /></td>
+        <td><input type="checkbox" id = "check33" /></td>
+        <td><input type="checkbox" id = "check34" /></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id = "checkh4" /><label for="checkh4">第四行</label></td>
+        <td><input type="checkbox" id = "check41" /></td>
+        <td><input type="checkbox" id = "check42" /></td>
+        <td><input type="checkbox" id = "check43" /></td>
+        <td><input type="checkbox" id = "check44" /></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id = "checkh5" /><label for="checkh5">第五行</label></td>
+        <td><input type="checkbox" id = "check51" /></td>
+        <td><input type="checkbox" id = "check52" /></td>
+        <td><input type="checkbox" id = "check53" /></td>
+        <td><input type="checkbox" id = "check54" /></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
