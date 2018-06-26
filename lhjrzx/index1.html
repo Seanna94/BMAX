@@ -25,13 +25,13 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini" style=" height:100%; padding: 0; margin: 0;">
 <header class="main-header" id="_layout_header">
-    <a href="index1.html" class="logo">
+    <a href="index.html" class="logo">
         <span class="logo-mini"><b>B</b>P</span>
         <span class="logo-lg"><b>Basepoint</b></span>
     </a>
     <nav class="navbar">
         <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
-        <a  class="sidebar-toggle" data-toggle="offcanvas">
+        <a href="#" data-toggle="offcanvas" class="sidebar-toggle">
             <span class="sr-only">Toggle navigation</span>
         </a>
 
@@ -49,7 +49,7 @@
                 </li>
 
                 <li>
-                    <a id="link_project" title="XX项目">龙湖金融中心</a>
+                    <a id="link_project" title="XX项目">XX项目 </a>
                 </li>
 
                 <li class="dropdown notifications-menu" style="" id="_layout_alarm_notification">
@@ -73,7 +73,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="user-header">
-                            <img src="img/a.jpg" id="page_layout_userHead2" class="img-circle" onerror="this.src ='img/a.jpg'">
+                            <img src="img/b.jpg" id="page_layout_userHead2" class="img-circle" onerror="this.src ='img/b.jpg'">
                             <p>
                                 <label id="page_layout_userName_top2">admin</label>
                                 <small id="page_layout_userName_roleName" title="项目管理员">项目管理员</small>
@@ -98,7 +98,7 @@
 </header>
 
 <aside class="main-sidebar">
-    <section class="sidebar" style="width: auto;overflow-y: auto;overflow-x: hidden" id="scro" >
+    <section class="sidebar" style="height: 849px;width: auto;overflow-y: auto;overflow-x: hidden"id="scro">
         <ul class="sidebar-menu"  id="_frame_left_menu">
             <li class="header" style="text-align: center;color: #eee;font-size: 16px;">功能菜单</li>
             <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
@@ -108,11 +108,9 @@
                     <i class="fa fa-exclamation-triangle"></i>
                     <span>报警管理</span>
                 </a>
-                <ul class="treeview-menu" onLoad="changeFrameHeight()">
+                <ul class="treeview-menu">
                     <li><a href="page/shishibaojing.html" target="center_main" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
-                    <li><a href="page/lishibaojing.html"
-                           target="center_main" pagetitle="历史报警">
-                        <i class="fa fa-circle-thin"></i> 历史报警</a></li>
+                    <li><a href="page/lishibaojing.html" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
@@ -124,31 +122,30 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="page/user.html" target="center_main" pagetitle="用户管理"><i class="fa fa-circle-thin"></i> 用户管理</a></li>
-                    <li><a href="#" pagetitle="权限配置"><i class="fa fa-circle-thin"></i>权限配置</a></li>
+                    <li><a href="page/quanxianpeizhi.html" target="center_main" pagetitle="权限配置"><i class="fa fa-circle-thin"></i>权限配置</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a class="animated"href="#" pagetitle="模式管理" class="animated">
+                <a class="animated" pagetitle="模式管理" class="animated">
                     <span class="pull-right-container"> </span>
                     <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-cubes"></i>
                     <span>模式管理</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="page/6.html" target="center_main" pagetitle="模式运行"><i class="fa fa-circle-thin"></i> 模式运行</a></li>
-                    <li><a href="page/7.html"target="center_main"  pagetitle="模式配置"><i class="fa fa-circle-thin"></i> 模式配置</a></li>
+                    <li><a href="page/moShiPeiZHI.html" target="center_main" pagetitle="模式配置"><i class="fa fa-circle-thin"></i> 模式配置</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
-                <a pagetitle="运行日志" class="animated">
+                <a class="animated" pagetitle="运行日志" class="animated">
                     <span class="pull-right-container"> </span>
                     <i class="fa fa-angle-left pull-right"></i>
                     <i class="fa fa-pencil-square-o"></i>
                     <span>运行日志</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="page/8.html" target="center_main" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
-                    <li><a href="page/9.html" target="center_main" pagetitle="系统运行日志"><i class="fa fa-circle-thin"></i> 系统运行日志</a></li>
+                    <li><a href="page/userOpper.html" target="center_main" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
+                    <li><a href="page/xiTongYunxing.html" target="center_main" pagetitle="系统运行日志"><i class="fa fa-circle-thin"></i> 系统运行日志</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
@@ -159,7 +156,7 @@
                     <span>报表查询</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="page/10.html" target="center_main" pagetitle="历史报表"><i class="fa fa-circle-thin"></i> 历史报表</a></li>
+                    <li><a href="page/lishibaobiao.html                                                                                                                 "target="center_main" pagetitle="历史报表"><i class="fa fa-circle-thin"></i> 历史报表</a></li>
                 </ul>
             </li>
             <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
@@ -170,16 +167,15 @@
                     <span>系统配置</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="page/11.html" target="center_main" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
-                    <li><a href="page/12.html" target="center_main" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
-                    <li><a href="page/13.html" target="center_main" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
+                    <li><a href="page/xiangMuPeiZhi.html" target="center_main" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
+                    <li><a href="page/dongzuoliandong.html"target="center_main" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
+                    <li><a href="page/shiPinLianDong.html"target="center_main" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
                 </ul>
-        </li>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->
 </aside>
-
 <iframe class="content-wrapper" id="center" name="center_main" style="display: block;"
         frameborder="0" scrolling="atuo" marginheight="100%" marginwidth="100%"
         height="100%" onload="changeFrameWidth()" src="page/1aa.html">
