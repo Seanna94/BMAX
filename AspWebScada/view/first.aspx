@@ -176,7 +176,7 @@ function imgdragstart(){return false;}
 
 <body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" bgcolor="#FFFFFF">
 <div id="fscada">
-<img src="Images/first.png" border="0" />
+
 <div id="tagdatacontrol1" style="position:absolute;line-height:24px;left:633px;width:63px;height:24px;top:418px;font-family:'微软雅黑','Serif';font-style:normal;font-size:13px;font-weight:bold;color:rgb(0,0,0);" >00.00%</div>
 <div id="tagdatacontrol2" style="position:absolute;line-height:24px;left:632px;width:71px;height:24px;top:441px;font-family:'微软雅黑','Serif';font-style:normal;font-size:13px;font-weight:bold;color:rgb(0,0,0);" >0.00MPa</div>
 <div id="tagdatacontrol3" style="position:absolute;line-height:24px;left:633px;width:63px;height:24px;top:465px;font-family:'微软雅黑','Serif';font-style:normal;font-size:13px;font-weight:bold;color:rgb(0,0,0);" >0.00℃</div>

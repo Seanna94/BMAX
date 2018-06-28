@@ -22,13 +22,7 @@ $(document).ready(
 
 function changeFrameHeight(){
     var ifm= document.getElementById("center");
-    var sec=document.getElementById("scro");
-    var head=document.getElementById("head");
-    ht=document.documentElement.clientHeight-54;
-    wh=document.documentElement.clientWidth-54;
-    ifm.height=ht;
-    ifm.width=wh;
-    sec.height=ht;
+    ifm.width=$(document).width()-230;
 }
 window.onresize=function(){ changeFrameHeight();}
 $(function(){changeFrameHeight();});

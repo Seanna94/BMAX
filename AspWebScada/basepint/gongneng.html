@@ -1,0 +1,88 @@
+<script type="text/javascript">
+    	
+    	
+    	$(function(){
+    		
+    		
+    		$("#gongneng").click(function(){
+    			
+    			$.get("index.html",null,function(data){
+    				alert(data);
+    				$("#_frame_left_menu").html(data);
+    			},"html");
+    		});
+    	});
+    </script>
+            <li class="header" style="text-align: center;color: #eee;font-size: 16px;">功能菜单</li>
+            <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated"href="#" pagetitle="报警管理" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <span>报警管理</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="page/shishibaojing.html" target="center_main" pagetitle="实时报警"><i class="fa fa-circle-thin"></i> 实时报警</a></li>
+                    <li><a href="page/lishibaojing.html" target="center_main" pagetitle="历史报警"><i class="fa fa-circle-thin"></i> 历史报警</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated"pagetitle="用户管理" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-users"></i>
+                    <span>用户管理</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="page/user.html" target="center_main" pagetitle="用户管理"><i class="fa fa-circle-thin"></i> 用户管理</a></li>
+                    <li><a href="page/quanXianPeiZhi.html" target="center_main" pagetitle="权限配置"><i class="fa fa-circle-thin"></i>权限配置</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="模式管理" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-cubes"></i>
+                    <span>模式管理</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="page/moShiPeiZHI.html" target="center_main" pagetitle="模式配置"><i class="fa fa-circle-thin"></i> 模式配置</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="运行日志" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-pencil-square-o"></i>
+                    <span>运行日志</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="page/userOpper.html" target="center_main" pagetitle="用户操作日志"><i class="fa fa-circle-thin"></i> 用户操作日志</a></li>
+                    <li><a href="page/xiTongYunxing.html" target="center_main" pagetitle="系统运行日志"><i class="fa fa-circle-thin"></i> 系统运行日志</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated"href="#" pagetitle="报表查询" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-bar-chart"></i>
+                    <span>报表查询</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="page/lishibaobiao.html                                                                                                                 "target="center_main" pagetitle="历史报表"><i class="fa fa-circle-thin"></i> 历史报表</a></li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" pagetitle="系统配置" class="animated">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-gears"></i>
+                    <span>系统配置</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="page/xiangMuPeiZhi.html" target="center_main" pagetitle="项目配置"><i class="fa fa-circle-thin"></i> 项目配置</a></li>
+                    <li><a href="page/dongzuoliandong.html"target="center_main" pagetitle="动作联动配置"><i class="fa fa-circle-thin"></i> 动作联动配置</a></li>
+                    <li><a href="page/shiPinLianDong.html"target="center_main" pagetitle="视频联动配置"><i class="fa fa-circle-thin"></i> 视频联动配置</a></li>
+                </ul>
+        </li>
+      

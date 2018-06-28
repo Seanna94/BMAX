@@ -15,7 +15,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=1470,height=996,initial-scale=0.5,minimum-scale=0.5,maximum-scale=5,user-scalable=yes" />
+<meta name="viewport" content="width=1865,height=996,initial-scale=0.5,minimum-scale=0.5,maximum-scale=5,user-scalable=yes" />
 <title>主楼状态</title>
 <link href="../styles/style.css" rel="stylesheet" />
 <script src="../js/jquery.min.js"></script>
@@ -23,7 +23,7 @@
 
 
 <script type="text/javascript">
-grfwidth = 1470;
+grfwidth = 1865;
 grfheight = 996;
 var tagcount = 2;
 db["second"]={tagname:"second",type:"",value:"",state:"0",alarm:0,htmlobj: new Array()};
@@ -83,6 +83,18 @@ var tagdatacontrol35=new analogObj('tagdatacontrol35',2,'');
 db["second"].htmlobj.push(tagdatacontrol35);
 var switchimage36=new swimgObj('switchimage36','images/上行.png','images/下行.png');
 db["blink"].htmlobj.push(switchimage36);
+var tagdatacontrol38=new analogObj('tagdatacontrol38',2,'');
+db["second"].htmlobj.push(tagdatacontrol38);
+var switchimage39=new swimgObj('switchimage39','images/上行.png','images/下行.png');
+db["blink"].htmlobj.push(switchimage39);
+var tagdatacontrol41=new analogObj('tagdatacontrol41',2,'');
+db["second"].htmlobj.push(tagdatacontrol41);
+var switchimage42=new swimgObj('switchimage42','images/上行.png','images/下行.png');
+db["blink"].htmlobj.push(switchimage42);
+var tagdatacontrol44=new analogObj('tagdatacontrol44',2,'');
+db["second"].htmlobj.push(tagdatacontrol44);
+var switchimage45=new swimgObj('switchimage45','images/上行.png','images/下行.png');
+db["blink"].htmlobj.push(switchimage45);
 
 
 if (tagcount>0){postupdate();}
@@ -169,6 +181,24 @@ function imgdragstart(){return false;}
 <div id="xianshi38" style="position:absolute;line-height:28px;left:1185px;width:140px;height:28px;top:831px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >12#电梯</div>
 <div id="tagdatacontrol35" style="position:absolute;line-height:-2147483648px;left:1337px;width:-2147483648px;height:-2147483648px;top:710px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
 <img id="switchimage36" style="position:absolute;border:0px;left:1335px;top:760px;width:29px;height:29px;" src="images/上行.png" />
+<img id="imageex37" style="position:absolute;border:0px;left:1480px;top:120px;width:80px;height:130px;" src="images/电梯乘客.png" />
+<div id="xianshi39" style="position:absolute;line-height:28px;left:1577px;width:104px;height:28px;top:141px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >楼层：</div>
+<div id="xianshi40" style="position:absolute;line-height:28px;left:1575px;width:104px;height:28px;top:193px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >状态：</div>
+<div id="xianshi41" style="position:absolute;line-height:28px;left:1521px;width:140px;height:28px;top:263px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >4-1#电梯</div>
+<div id="tagdatacontrol38" style="position:absolute;line-height:-2147483648px;left:1673px;width:-2147483648px;height:-2147483648px;top:142px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<img id="switchimage39" style="position:absolute;border:0px;left:1671px;top:192px;width:29px;height:29px;" src="images/上行.png" />
+<img id="imageex40" style="position:absolute;border:0px;left:1488px;top:408px;width:80px;height:130px;" src="images/电梯乘客.png" />
+<div id="xianshi42" style="position:absolute;line-height:28px;left:1585px;width:104px;height:28px;top:429px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >楼层：</div>
+<div id="xianshi43" style="position:absolute;line-height:28px;left:1583px;width:104px;height:28px;top:481px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >状态：</div>
+<div id="xianshi44" style="position:absolute;line-height:28px;left:1529px;width:140px;height:28px;top:551px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >8-1#电梯</div>
+<div id="tagdatacontrol41" style="position:absolute;line-height:-2147483648px;left:1681px;width:-2147483648px;height:-2147483648px;top:430px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<img id="switchimage42" style="position:absolute;border:0px;left:1679px;top:480px;width:29px;height:29px;" src="images/上行.png" />
+<img id="imageex43" style="position:absolute;border:0px;left:1496px;top:688px;width:80px;height:130px;" src="images/电梯乘客.png" />
+<div id="xianshi45" style="position:absolute;line-height:28px;left:1593px;width:104px;height:28px;top:709px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >楼层：</div>
+<div id="xianshi46" style="position:absolute;line-height:28px;left:1591px;width:104px;height:28px;top:761px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >状态：</div>
+<div id="xianshi47" style="position:absolute;line-height:28px;left:1537px;width:140px;height:28px;top:831px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >12-1#电梯</div>
+<div id="tagdatacontrol44" style="position:absolute;line-height:-2147483648px;left:1689px;width:-2147483648px;height:-2147483648px;top:710px;font-family:'楷体','Serif';font-style:normal;font-size:25px;font-weight:normal;color:rgb(0,255,0);" >0.00</div>
+<img id="switchimage45" style="position:absolute;border:0px;left:1687px;top:760px;width:29px;height:29px;" src="images/上行.png" />
 
 </div>
 

@@ -46,8 +46,8 @@
 
         .userloginx
         {
-            background-image: url(images/userlogin.gif);
-            float: right;
+            background-image: url(../images/userlogin.gif);
+            float: left;
             height: 112px;
             width: 270px;
             margin-right: 10px;
@@ -59,9 +59,12 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript">
         function login() {
-            $.post("login.ashx", { user: $("#user").val(), pwd: $("#pwd").val() },
+            $.post("../login.ashx", { user: $("#user").val(), pwd: $("#pwd").val() },
               function (data) {
                   if (data.login == 1) {
+                      sessionStorage.setItem("userName",$("#user").val())
+                  	  history.go(-1);
+                  		
                       location.href = "default.aspx";
                   }
                   else {
@@ -96,7 +99,7 @@
                 </td>
                 <td>
                     <span style="float: left; margin-left: 5px;">
-                        <input type="image" name="ImageButton1" id="ImageButton1" onclick="javascript: login();" src="images/login_btn.gif" />
+                        <input type="image" name="ImageButton1" id="ImageButton1" onclick="javascript: login();" src="../images/login_btn.gif" />
                     </span>
                 </td>
             </tr>

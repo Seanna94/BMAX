@@ -15,7 +15,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=1470,height=996,initial-scale=0.5,minimum-scale=0.5,maximum-scale=5,user-scalable=yes" />
+<meta name="viewport" content="width=1865,height=996,initial-scale=0.5,minimum-scale=0.5,maximum-scale=5,user-scalable=yes" />
 <title>热源设备</title>
 <link href="../styles/style.css" rel="stylesheet" />
 <script src="../js/jquery.min.js"></script>
@@ -23,7 +23,7 @@
 
 
 <script type="text/javascript">
-grfwidth = 1470;
+grfwidth = 1865;
 grfheight = 996;
 var tagcount = 0;
 var updatetimer=1000;
@@ -47,7 +47,7 @@ function imgdragstart(){return false;}
 <div id="fscada">
 <img src="Images/热源设备.png" border="0" />
 <div id="xianshi2" style="position:absolute;line-height:40px;left:1px;width:548px;height:40px;top:16px;font-family:'楷体','Serif';font-style:normal;font-size:28px;font-weight:normal;color:rgb(255,255,255);" >>>楼宇自控系统 >>> 热源设备</div>
-<img id="imageex1" style="position:absolute;border:0px;left:0px;top:60px;width:1470px;height:946px;" src="images/热源.jpg" />
+<img id="imageex1" style="position:absolute;border:0px;left:0px;top:60px;width:1865px;height:946px;" src="images/热源.jpg" />
 
 </div>
 

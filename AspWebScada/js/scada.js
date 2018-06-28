@@ -192,12 +192,20 @@ function display(name) { location.href = name + ".aspx"; };
 function openvariables() { location.href = "../database.aspx"; };
 
 function writetag(tag, v) {
-    if (tag == "") { return; }
-    if (v == "") {v = getinputvalue("Please input value", "0");}
-    if (v != null && v != "") {
-        var tagvalue = { command: "writetag", tagname: tag, value: v };
-        $.post("../command.ashx", tagvalue, function (data) { }, "json");
-    }
+   if(tag.indexOf("Door") >= 0 && sessionStorage.getItem("userName") != "admin"){
+   		//alert(JSON.stringify(document.getElementById("testf")));
+   		//alert(document.getElementById("#testf").getAttribute("src"));
+		//document.getElementById("#testf").setAttribute("src","../login.html");
+		location.href = "../login.html";
+	}else{
+		
+		if (tag == "") { return; }
+	    if (v == "") {v = getinputvalue("请输入1(开)或0(关)！", "0");}
+	    if (v != null && v != "") {
+	        var tagvalue = { command: "writetag", tagname: tag, value: v };
+	        $.post("../command.ashx", tagvalue, function (data) { }, "json");
+	    }
+	}
 }
 function addtagvalue(tag, v) {
     if (tag == "") { return; }
@@ -209,4 +217,13 @@ function toogletag(tag) {
     if (tag == "") { return; }
     var tagvalue = { command: "toogletag", tagname: tag };
     $.post("../command.ashx", tagvalue, function (data) { }, "json");
+}
+
+function open_video(ip){
+
+	window.open("http://192.168.1.251:8647/camera.asp?IP="+ip+"&PORT=80","newwindow", "height=400,width=750,top=200,left=550", "toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no");
+}
+function open_video2(ip){
+
+	window.open("http://192.168.1.251:8046/camera.asp?IP="+ip+"&PORT=80","newwindow", "height=400,width=750,top=200,left=550", "toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no");
 }
