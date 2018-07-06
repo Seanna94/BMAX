@@ -20,80 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2343">
-              <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="信息发布.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/信息发布/信息发布/信息发布.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="169" column="32" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1aa.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/1aa.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="13" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xtjk.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="xtjk.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/xtjk.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="506" column="30" selection-start-line="506" selection-start-column="30" selection-end-line="506" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-1881" />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="门禁记录.aspx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/门禁记录.aspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.aspx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/main.aspx">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="主楼5F.aspx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/主楼5F.aspx">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -102,7 +33,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="html2" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -123,6 +53,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/views/入侵报警/地上楼层/3F.html" />
+        <option value="$PROJECT_DIR$/views/入侵报警/地上楼层/4F.html" />
+        <option value="$PROJECT_DIR$/views/入侵报警/地上楼层/5F.html" />
+        <option value="$PROJECT_DIR$/views/入侵报警/地下楼层/-1F.html" />
+        <option value="$PROJECT_DIR$/views/入侵报警/地下楼层/-2F.html" />
+        <option value="$PROJECT_DIR$/views/入侵报警/地下楼层/-3F.html" />
+        <option value="$PROJECT_DIR$/views/公共广播/广播终端/背景音乐.html" />
+        <option value="$PROJECT_DIR$/views/夜景照明/夜景照明/夜间照明.html" />
+        <option value="$PROJECT_DIR$/views/客流统计/客流统计/客流分析.html" />
         <option value="$PROJECT_DIR$/views/智能照明/智能照明/照明列表.html" />
         <option value="$PROJECT_DIR$/views/机房动环/机房动环/机房动环.html" />
         <option value="$PROJECT_DIR$/views/楼宇自控/冷机群控/热源/热源.html" />
@@ -165,15 +104,6 @@
         <option value="$PROJECT_DIR$/views/门禁管理/地下楼层/-1F.html" />
         <option value="$PROJECT_DIR$/views/门禁管理/地下楼层/-2F.html" />
         <option value="$PROJECT_DIR$/views/门禁管理/地下楼层/-3F.html" />
-        <option value="$PROJECT_DIR$/page/test.js" />
-        <option value="$PROJECT_DIR$/page/1a.html" />
-        <option value="$PROJECT_DIR$/page/test1.html" />
-        <option value="$PROJECT_DIR$/page/user.html" />
-        <option value="$PROJECT_DIR$/page/user.asp" />
-        <option value="$PROJECT_DIR$/page/1aa.html" />
-        <option value="$PROJECT_DIR$/views/信息发布/信息发布/信息发布.html" />
-        <option value="$PROJECT_DIR$/page/xtjk.html" />
-        <option value="$PROJECT_DIR$/view/门禁记录.aspx" />
       </list>
     </option>
   </component>
@@ -186,18 +116,17 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="192" />
-    <option name="y" value="209" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,33 +137,13 @@
             <path>
               <item name="lhjrzx" type="b2602c69:ProjectViewProjectNode" />
               <item name="lhjrzx" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lhjrzx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lhjrzx" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lhjrzx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lhjrzx" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lhjrzx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lhjrzx" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lhjrzx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lhjrzx" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="信息发布" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,11 +163,11 @@
       <recent name="F:\workspace\lhjrzx\page" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workspace\lhjrzx" />
-      <recent name="F:\workspace\lhjrzx\dist" />
       <recent name="F:\lhjrzx\views" />
       <recent name="F:\lhjrzx" />
       <recent name="E:\workspace\Webstrom\lhjrzx\img" />
+      <recent name="F:\workspace\lhjrzx\img" />
+      <recent name="F:\workspace\lhjrzx" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -349,34 +258,27 @@
       <workItem from="1530503950480" duration="12119000" />
       <workItem from="1530598288024" duration="4272000" />
       <workItem from="1530609823648" duration="22000" />
-      <workItem from="1530663311179" duration="7413000" />
-      <workItem from="1530694703869" duration="357000" />
-      <workItem from="1530695076990" duration="46000" />
-      <workItem from="1530695958511" duration="1244000" />
-      <workItem from="1530700785660" duration="648000" />
-      <workItem from="1530750463623" duration="1239000" />
-      <workItem from="1530784220490" duration="862000" />
-      <workItem from="1530787411414" duration="1273000" />
+      <workItem from="1530663311179" duration="2477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125936000" />
+    <option name="totallyTimeSpent" value="115331000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13382508" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.112223394" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -402,6 +304,72 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/入侵报警/地下楼层/-1F.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/入侵报警/地下楼层/-2F.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/入侵报警/地下楼层/-2F.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/入侵报警/地下楼层/-3F.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="60" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/公共广播/广播终端/背景音乐.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/夜景照明/夜景照明/夜间照明.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="60" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/客流统计/客流统计/客流分析.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/智能照明/智能照明/照明列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/机房动环/机房动环/机房动环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/楼宇自控/冷机群控/热源/热源.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="6" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/楼宇自控/变配电/低压配电/低压配电.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -464,6 +432,9 @@
           <caret line="59" column="12" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="59" selection-end-column="12" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/楼宇自控/暖通空调/新风机组/新风机列表.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/楼宇自控/暖通空调/新风机组/新风机列表.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -675,66 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2343">
-          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/test1.html" />
-    <entry file="file://$PROJECT_DIR$/page/user.asp" />
-    <entry file="file://$PROJECT_DIR$/page/1a.html" />
-    <entry file="file://$PROJECT_DIR$/page/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/1aa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/信息发布/信息发布/信息发布.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="169" column="32" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/主楼5F.aspx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/xtjk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="506" column="30" selection-start-line="506" selection-start-column="30" selection-end-line="506" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1881" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/门禁记录.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/main.aspx">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
