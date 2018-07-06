@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>放大缩小</title>
+
+    <style>
+
+    </style>
+    <SCRIPT>
+
+        var zoomRate = 20;
+        var maxRate = 500;
+        var minRate = 50;
+        var currZoom = 100;
+
+        //document.onkeypress = getKey;
+        //window.onload = initZoom;
+
+        function GetCookie(name){
+            if (document.cookie != "") {
+                zoomc = document.cookie.split("; ");
+                for (var i=0; i < zoomc.length; i++) {
+                    zoomv = zoomc[i].split("=");
+                    if (zoomv[0] == name) {
+                        return  unescape(zoomv[1]);
+                    }
+                }
+            }else{
+                return "";
+            }
+        }
+
+        function SetCookie(name,value){
+            document.cookie = name + "=" + escape (value)+";";
+        }
+
+        function GoZoom(contentid){
+            if(GetCookie("zoomVal") != null && GetCookie("zoomVal") != ""){
+                document.all[contentid].style.zoom = GetCookie("zoomVal");
+                currZoom=GetCookie("zoomVal");
+            }
+            else{
+                document.all[contentid].style.zoom = '100%';
+                currZoom = '100%';
+            }
+        }
+
+        function zoomInOut(contentid, how) {
+            if(GetCookie("zoomVal") != null && GetCookie("zoomVal") != ""){
+                document.all[contentid].style.zoom = GetCookie("zoomVal");
+                currZoom=GetCookie("zoomVal");
+            }
+            else{
+                document.all[contentid].style.zoom = '100%';
+
+                currZoom = '100%';
+            }
+            if (((how == "in") && (parseInt(currZoom) >= maxRate)) || ((how == "out") && (parseInt(currZoom) <= minRate)) ) {
+                return;
+            }
+            if (how == "in") {
+                document.all[contentid].style.zoom = parseInt(document.all[contentid].style.zoom)+zoomRate+'%';
+            }
+            else {
+                document.all[contentid].style.zoom = parseInt(document.all[contentid].style.zoom)-zoomRate+'%'
+            }
+            SetCookie("zoomVal",document.all[contentid].style.zoom);
+            showCurrZoom(contentid);
+        }
+        function getKey(keyStroke) {
+            isNetscape=(document.layers);
+            eventChooser = (isNetscape) ? keyStroke.which : event.keyCode;
+            which = String.fromCharCode(eventChooser).toLowerCase();
+            which2 = eventChooser;
+
+            var el=event.srcElement;
+
+            if ((el.tagName != "INPUT") && (el.tagName != "TEXTAREA"))
+            {
+                if(which == "+" )
+                    zoomInOut('zoom', 'in');
+                else if(which == "-" )
+                    zoomInOut('zoom', 'out');
+            }
+        }
+
+        function initZoom(contentid) {
+            if(GetCookie("zoomVal") != null && GetCookie("zoomVal") != ""){
+                document.all[contentid].style.zoom = GetCookie("zoomVal");
+                currZoom=GetCookie("zoomVal");
+            }
+            else{
+                document.all[contentid].style.zoom = '100%';
+                currZoom = '100%';
+            }
+            showCurrZoom(contentid);
+        }
+
+        function showCurrZoom(contentid) {
+            document.all['showZoom'].innerText = document.all[contentid].style.zoom;
+        }
+    </SCRIPT>
+</head>
+<body>
+<div id="zoom" style="background-color: #bce8f1;">
+    <input type="button" value="放大(+)" onclick="zoomInOut('zoom','in')"/>
+    <span id="showZoom"></span>
+    <input type="button" value="缩小(-)" onclick="zoomInOut('zoom','out')"/>
+</div><br/>
+<div style="text-align:center"><br/>
+    <script type="text/javascript">
+        initZoom("zoom");
+    </script>
+</div>
+</body>
+</html>

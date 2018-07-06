@@ -49,15 +49,15 @@
         }
     </style>
     <script>
-        // function connectWebSocket(func) {
-        //     PageBuilderWebSocket.connectSocketServer(_projectObj.ProjectInfo.WebSocketAddress, function () {
-        //         if (func != undefined) {
-        //             func();
-        //         }
-        //     }, function () {
-        //         JMessage("[实时数据] 通信连接断开,请检查网络或底层服务状态。", true);
-        //     });
-        // }
+        function connectWebSocket(func) {
+            PageBuilderWebSocket.connectSocketServer(_projectObj.ProjectInfo.WebSocketAddress, function () {
+                if (func != undefined) {
+                    func();
+                }
+            }, function () {
+                JMessage("[实时数据] 通信连接断开,请检查网络或底层服务状态。", true);
+            });
+        }
 
         function getTagData() {
             //获取当前页面需订阅的点ID

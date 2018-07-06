@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+<div >
+    <font color="#000000" size="4">
+        听一场摇滚，和耳朵一起一醉方休；<br />
+        喝一圈烈酒，让酒腻子们闻风丧胆；<br />
+        开一场cosplay party，二次元万岁；<br />
+        摸一下大蜥蜴，我熊胆威风凌厉；<br />
+        吃三斤驴打滚，翻滚吧肠胃；<br />
+        飚一把摩托车，成为风驰电掣的女王；<br />
+        见一下微博红人，感受马伯庸亲王的慈祥；
+    </font>
+</div>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/bootstrap.js" ></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        openModal();
+        closeModal();
+    });
+
+    //打开模态框
+    function openModal(){
+        var fatherBody = $(window.top.document.body);
+        var id = 'pages';
+        var dialog = $('#' + id);
+        if (dialog.length == 0) {
+            dialog = $('<div class="modal fade" role="dialog" id="' + id + '"/>');
+            dialog.appendTo(fatherBody);
+        }
+        dialog.load("model.html", function() {
+            dialog.modal({
+                backdrop: false
+            });
+        });
+        fatherBody.append("<div id='backdropId' class='modal-backdrop fade in'></div>");
+    }
+
+    //关闭模态框
+    function closeModal(){
+        var fatherBody = $(window.top.document.body);
+        fatherBody.find("#pages").on('hidden.bs.modal', function (e) {
+            fatherBody.find("#backdropId").remove();
+        });
+    }
+</script>
+</body>
+</html>

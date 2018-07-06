@@ -10,6 +10,8 @@
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
     <script src="../plugins/chart.js/Chart.js"></script>
+    <script src="../dist/jquery.min.js"></script>
+    <script src="../dist/jquery.mousewheel.min.js"></script>
     <!--<link href="https://cdn.bootcss.com/bootstrap-calendar/0.2.5/css/calendar.min.css" rel="stylesheet">-->
 
 </head>
@@ -275,6 +277,27 @@
     function myrefresh(){
         window.location.reload();
     }
+
+
+
+    var zoom = 100,exp=10;
+    $(function(){
+        $('body').css('zoom',zoom+'%');
+    });
+
+    $('body').mousewheel(function(event, delta, deltaX, deltaY) {
+        if (window.console && console.log) {
+            zoom = delta == 1 ? zoom+=exp : zoom-=exp;
+            if(zoom <= 100) zoom = 100;
+            $(this).css('zoom',zoom+'%');
+        }
+    });
+
+    $('body').dblclick(function(event) {
+        zoom = 100;
+        $(this).css('zoom','100%');
+    });
+
 </script>
 
 </body>

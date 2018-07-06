@@ -171,6 +171,28 @@
                         </ul>
                     </li>
                     <li>
+                        <a class="animated" pagetitle="排风系统">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa fa-arrow-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>排风系统
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../views/楼宇自控/排风系统/排风机.html"target="center_main" pagetitle="排风机"><i class="fa fa-angle-right"></i>排风机</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="animated" pagetitle="给排水">
+                            <span class="pull-right-container"></span>
+                            <i class="fa fa fa-arrow-right"></i>
+                            <i class="fa fa-angle-left pull-right"></i>给排水
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../views/楼宇自控/给排水/排水系统/排水系统.html"target="center_main" pagetitle="排水系统"><i class="fa fa-angle-right"></i>排水系统</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a class="animated" pagetitle="暖通空调">
                             <span class="pull-right-container"></span>
                             <i class="fa fa fa-arrow-right"></i>
@@ -194,14 +216,6 @@
                                 <ul class="treeview-menu">
                                     <li><a href="../views/楼宇自控/暖通空调/空调机组/空调列表.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-right"></i>空调列表</a></li>
                                     <li><a href="../views/楼宇自控/暖通空调/空调机组/空调机结构图.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-right"></i>空调机结构图</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="treeview-menu">
-                            <li><a pagetitle="组合式空调"><i class="fa fa-angle-double-right"></i>
-                                组合式空调</a>
-                                <ul class="treeview-menu">
-                                    <li><a href="../views/楼宇自控/暖通空调/组合式空调/空调机结构图.html" target="center_main" pagetitle="-1F"><i class="fa fa-angle-right"></i>空调机结构图</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -316,10 +330,15 @@
                                     <i class="fa fa-angle-double-right"></i>
                                     B2F车位信息
                                 </a>
-                                <a class="animated" href="../views/停车管理/车位引导/B3F车位信息.html"target="center_main" pagetitle="B1F车位信息">
+                                <a class="animated" href="../views/停车管理/车位引导/B3F车位信息.html"target="center_main" pagetitle="B2F车位信息">
                                     <span class="pull-right-container"></span>
                                     <i class="fa fa-angle-double-right"></i>
                                     B3F车位信息
+                                </a>
+                                <a class="animated" href="../views/停车管理/车位引导/车位信息.html"target="center_main" pagetitle="车位信息">
+                                    <span class="pull-right-container"></span>
+                                    <i class="fa fa-angle-double-right"></i>
+                                  车位信息
                                 </a>
                             </li>
                         </ul>
@@ -430,6 +449,47 @@
                 </ul>
             </li>
 
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="UPS">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-battery-full"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>UPS</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../views/UPS/UPS/UPS.html" target="center_main" pagetitle="UPS"><i class="fa fa-arrow-right"></i>
+                       UPS</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="客流统计">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-group"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>客流统计</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../views/客流统计/客流统计/客流分析.html" target="center_main" pagetitle="客流统计"><i class="fa fa-arrow-right"></i>
+                    客流统计</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="#" pagetitle="能耗统计">
+                    <span class="pull-right-container"></span>
+                    <i class="fa fa-bar-chart-o"></i>
+                    <i class="fa fa-angle-left pull-right"></i>
+                    <span>能耗统计</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../views/能耗统计/能耗分析.html" target="center_main" pagetitle="能耗分析">
+                        <i class="fa fa-arrow-right"></i>
+                      能耗分析</a>
+                    </li>
+                </ul>
+            </li>
+
 
         </ul>
         <!-- /.sidebar -->
@@ -438,11 +498,12 @@
 </div>
 </div>
 
-<iframe class="content-wrapper" onresize=f() id="center" name="center_main" style="display: block; text-align: center;"
-        frameborder="0" scrolling="atuo" marginheight="0" onload="changeFrameWidth()"
-        marginwidth="0" src="../page/1aa.html">
-</iframe>
-<script src="../js/index.js"></script>
+<!--<iframe class="content-wrapper" onresize=f() id="center" name="center_main" style="display: block; text-align: center;"-->
+        <!--frameborder="0" scrolling="atuo" marginheight="0" onload="changeFrameWidth()"-->
+        <!--marginwidth="0" src="../page/1aa.html">-->
+<!--</iframe>-->
+<!--<script src="../js/index.js"></script>-->
 
+<iframe src="../view/门禁记录.aspx" id="aa" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="position:absolute;left:120px;width:936px;height:488px;top:40px;"></iframe>
 </body>
 </html>

@@ -196,9 +196,8 @@ function writetag(tag, v) {
    		//alert(JSON.stringify(document.getElementById("testf")));
    		//alert(document.getElementById("#testf").getAttribute("src"));
 		//document.getElementById("#testf").setAttribute("src","../login.html");
-		location.href = "../login.html";
+		location.href = "../login1.html";
 	}else{
-		
 		if (tag == "") { return; }
 	    if (v == "") {v = getinputvalue("请输入1(开)或0(关)！", "0");}
 	    if (v != null && v != "") {

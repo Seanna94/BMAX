@@ -20,8 +20,59 @@
         <div class="box-header with-border">
             <i class="fa fa-angle-double-right text-blue"></i><h3 class="box-title text-blue">用户列表</h3>
             <div class="box-tools">
-            <a class="text-blue">添加</a>
+                <a class="text-blue" data-toggle="modal" data-target="#myModal" >添加</a>
             </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width: 550px">
+                <div class="modal-content">
+                    <div class="modal-header with-border">
+                        <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue" id="myModalLabel">添加用户</span>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="2">编号</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="2" placeholder="编号">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="3">账号</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="3" placeholder="账号">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="4">密码</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="4" placeholder="密码">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="5">账号</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="5" placeholder="姓名">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="6">账号</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="6" placeholder="姓名">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="7">备注</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="7" placeholder="备注">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" id="add" class="btn btn-primary" data-dismiss="modal">添加</button>
+                            </div>
+                        </form></div></div></div>
         </div>
         <div class="box-body">
             <div class="row">
@@ -64,7 +115,9 @@
                             <td>123</td>
                             <td>李磊</td>
                             <td>经理</td>
-                            <td><a href="#">删除</a> <a> 修改</a></td>
+                            <td><a data-toggle="modal" data-target="#delete">删除</a>
+                                <a data-toggle="modal" data-target="#update"> 修改</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -72,7 +125,9 @@
                             <td>123</td>
                             <td>张三</td>
                             <td>员工</td>
-                            <td><a href="#">删除</a> <a> 修改</a></td>
+                            <td><a data-toggle="modal" data-target="#delete">删除</a>
+                                <a data-toggle="modal" data-target="#update"> 修改</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -80,7 +135,9 @@
                             <td>123</td>
                             <td>阳河</td>
                             <td>员工</td>
-                            <td><a href="#">删除</a> <a> 修改</a></td>
+                            <td><a data-toggle="modal" data-target="#delete">删除</a>
+                                <a data-toggle="modal" data-target="#update"> 修改</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -88,7 +145,9 @@
                             <td>123</td>
                             <td>星星</td>
                             <td>员工</td>
-                            <td><a href="#">删除</a> <a> 修改</a></td>
+                            <td><a data-toggle="modal" data-target="#delete">删除</a>
+                                <a data-toggle="modal" data-target="#update"> 修改</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -96,7 +155,9 @@
                             <td>123</td>
                             <td>小龙</td>
                             <td>员工</td>
-                            <td><a href="#">删除</a> <a> 修改</a></td>
+                            <td><a data-toggle="modal" data-target="#delete">删除</a>
+                                <a data-toggle="modal" data-target="#update"> 修改</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -104,9 +165,73 @@
                             <td>123</td>
                             <td>小龙</td>
                             <td>员工</td>
-                            <td><a href="#">删除</a> <a> 修改</a></td>
+                            <td><a data-toggle="modal" data-target="#delete">删除</a>
+                                <a data-toggle="modal" data-target="#update"> 修改</a>
+                            </td>
                         </tr>
                     </table>
+                </div>
+            </div>
+            <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="up" aria-hidden="true">
+                <div class="modal-dialog" style="width: 550px">
+                    <div class="modal-content">
+                        <div class="modal-header with-border">
+                            <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue" id="up">修改用户</span>
+                        </div>
+
+                        <div class="modal-body">
+                            <form class="form-horizontal">
+                                <div class="form-group form-group-sm">
+                                    <label class="col-sm-2 control-label" for="10">编号</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="10" placeholder="编号">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label class="col-sm-2 control-label" for="11">密码</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="11" placeholder="密码">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label class="col-sm-2 control-label" for="12">账号</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="12" placeholder="账号">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label class="col-sm-2 control-label" for="13">姓名</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="13" placeholder="姓名">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-sm">
+                                    <label class="col-sm-2 control-label" for="14">备注</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="14" placeholder="备注">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" id="xiugai" class="btn btn-primary" data-dismiss="modal">修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="up" aria-hidden="true">
+                <div class="modal-dialog" style="width: 400px">
+                    <div class="modal-content">
+                        <div class="modal-header with-border">
+                            <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue" id="del">删除联动配置</span>
+                        </div>
+                        <div class="modal-body">确定删除吗？</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" id="sure" class="btn btn-primary" data-dismiss="modal">确定</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
