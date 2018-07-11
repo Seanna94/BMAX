@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link href="../Resource/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Resource/Content/css/jquery.rollbar.css" rel="stylesheet" />
+    <link href="home1.css" rel="stylesheet" />
+    <link href="../Resource/Content/css/animate.min.css" rel="stylesheet" />
+    <script src="../Resource/Content/js/jquery-2.2.1.min.js"></script>
+    <script src="../Resource/Content/js/handlebars-v4.0.5.js"></script>
+    <script src="../Resource/Content/js/JSLINQ.js"></script>
+    <script src="../Resource/Content/js/jquery.mousewheel.min.js"></script>
+    <script src="../Resource/Content/js/jquery.rollbar.min.js"></script>
+    <script src="../Resource/Content/js/jquery.ba-resize.js"></script>
+    <script src="../Resource/Content/Core/projectInfo.js"></script>
+    <script src="../Resource/Content/Core/menuConfig_surperMenu.js"></script>
+
+    <script>
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r !== null) return (r[2]); return null;
+        }
+
+        var pb_home = (function () {
+            var pb_iframe = null;
+            var pb_leftmenu_div = null;
+            var _showFold = false;
+            var authorizationToken = null;
+            var systemMonitoringMenuURL = null;
+
+            var init_pb_leftmenu_div_height = function () {
+                pb_leftmenu_div = $("#pb_leftmenu_div");
+                var pb_leftmenu_heigth = document.body.clientHeight - parseInt(pb_leftmenu_div.css("marginTop"));
+                pb_leftmenu_div.height(pb_leftmenu_heigth);
+            };
+
+            var initElement = function () {
+                pb_iframe = $("#pb_iframe");
+                pb_leftmenu_div = $("#pb_leftmenu_div")
+                init_pb_leftmenu_div_height();
+                if (_showFold !== undefined && _showFold === true) {
+                    pb_leftmenu_div.css({ "marginTop": 30 });
+                    $("#pb_fold").show();
+                }
+
+            };
+
+            var initFloorAndTab = function (id) {
+                var pb_div_floorinfo_detail = $('#pb_div_floorinfo_detail');
+                var pb_div_tab = $('#pb_div_tab');
+                var level_pb_div_floorinfo_detail = parseInt(pb_div_floorinfo_detail.data("level") || -1);
+                var level_pb_div_tab = parseInt(pb_div_tab.data("level") || -1);
+                if (level_pb_div_floorinfo_detail === -1) {
+                    pb_div_floorinfo_detail.empty();
+                }
+                if (level_pb_div_tab === -1) {
+                    pb_div_tab.empty();
+                }
+                if (level_pb_div_floorinfo_detail >= 0 && level_pb_div_tab >= 0) {
+                    if (level_pb_div_floorinfo_detail < level_pb_div_tab && id !== "pb_div_tab") {
+                        pb_div_tab.empty();
+                    } else if (level_pb_div_floorinfo_detail > level_pb_div_tab && id !== "pb_div_floorinfo_detail") {
+                        pb_div_floorinfo_detail.empty();
+                        $("#pb_div_floor").hide();
+                    }
+                }
+            };
+
+            var resizeTimer = null;
+            var initEvent = function () {
+                window.addEventListener('message', function (e) {
+                    pb_home.menuShow(e.data.isShow);
+                    e.source.postMessage('get', '*');
+                }, false)
+
+                $("body").jqResize(function () {
+                    if (resizeTimer !== null) {
+                        clearTimeout(resizeTimer);
+                    }
+                    resizeTimer = setTimeout(function () {
+                        init_pb_leftmenu_div_height();
+                        pb_leftmenu_div.trigger('rollbar', [-500, 0])
+                        clearTimeout(resizeTimer);
+                        resizeTimer = null;
+                    }, 150);
+                });
+
+                $("#pb_div_floor").click(function () {
+                    var pb_div_floorinfo = $("#pb_div_floorinfo");
+                    if (pb_div_floorinfo.is(":hidden")) {
+                        $(".pb_div_iframe_div").show();
+                        pb_div_floorinfo.fadeIn(200);
+                    } else {
+                        pb_div_floorinfo.fadeOut(200);
+                        $(".pb_div_iframe_div").hide();
+                    }
+                });
+
+                $("#pb_div_floorinfo_close").click(function () {
+                    $("#pb_div_floorinfo").fadeOut(200);
+                    $(".pb_div_iframe_div").hide();
+                });
+
+                //左侧二级菜单点击事件
+                $("#pb_leftmenu").on("click", ".pb_leftmenu_level2", function () {
+                    var obj = $(this);
+                    var id = obj.data("id");
+                    var pid = obj.data("pid");
+                    var mode = obj.data("mode");
+                    var url = obj.data("url");
+                    var referencemode = obj.data("referencemode");
+                    var pb_div_floorinfo_detail = $('#pb_div_floorinfo_detail');
+                    var pb_div_tab = $('#pb_div_tab');
+
+                    $(".pb_leftmenu_level2").removeClass("active");
+                    obj.addClass("active");
+
+                    $("#pb_div_floor").hide();
+                    pb_div_floorinfo_detail.html("");
+                    pb_div_tab.html("");
+                    $(".pb_div_iframe_div").hide();
+
+
+                    var list = JSLINQ(_surperMenuObjAll).Where(function (n) { return n.ParentID == id; }).ToArray();
+
+                    if (mode == "1") {
+                        var myTemplate = Handlebars.compile($("#template_pb_div_floorinfo_detail").html());
+                        pb_div_floorinfo_detail.html(myTemplate(list)).data("level", 2);
+                        $("#pb_div_floor_current").text("");
+                        if (list.length > 0) {
+                            $("#pb_div_floor_current").text(list[0].Name);
+                            pb_div_floorinfo_detail.find("span:eq(0)").addClass("active");
+                        }
+                        $("#pb_div_floor").show();
+                    } else if (mode == "2") {
+                        var myTemplate = Handlebars.compile($("#template_pb_div_tab").html());
+                        pb_div_tab.html(myTemplate(list)).data("level", 2);
+                        if (list.length > 0) {
+                            pb_div_tab.find("span:eq(0)").addClass("active");
+                        }
+                    }
+
+                    if (referencemode == "1" && url && url.length > 0) {
+                        if (url.indexOf("http") >= 0 || url.indexOf("www") >= 0) {
+
+                        } else {
+                            url = "../" + url + "?authorizationToken=" + authorizationToken;
+                        }
+                        pb_iframe.css("opacity", 0).attr("src", url).hide().css("opacity", 1);
+                    }
+                });
+
+                //楼层点击事件
+                $("#pb_div_floorinfo_detail").on("click", "span", function () {
+                    var obj = $(this);
+                    var id = obj.data("id");
+                    var pid = obj.data("pid");
+                    var mode = obj.data("mode");
+                    var bname = obj.data("bname");
+                    var url = obj.data("url") || "";
+                    var referencemode = obj.data("referencemode");
+                    var pb_div_floorinfo_detail = $('#pb_div_floorinfo_detail');
+                    var pb_div_tab = $('#pb_div_tab');
+                    pb_div_floorinfo_detail.find("span").removeClass("active");
+                    obj.addClass("active");
+                    var level = parseInt(pb_div_floorinfo_detail.data("level"));
+                    initFloorAndTab("pb_div_floorinfo_detail");
+
+                    $("#pb_div_floor_current").text(bname);
+                    var list = JSLINQ(_surperMenuObjAll).Where(function (n) { return n.ParentID == id; }).ToArray();
+                    if (mode == "1") {
+                        var myTemplate = Handlebars.compile($("#template_pb_div_floorinfo_detail").html());
+                        pb_div_floorinfo_detail.html(myTemplate(list)).data("level", level + 1);
+                        $("#pb_div_floor_current").text("");
+                        if (list.length > 0) {
+                            $("#pb_div_floor_current").text(list[0].Name);
+                            pb_div_floorinfo_detail.find("span:eq(0)").addClass("active");
+                        }
+                        $("#pb_div_floor").show();
+                    } else if (mode == "2") {
+                        var myTemplate = Handlebars.compile($("#template_pb_div_tab").html());
+                        pb_div_tab.html(myTemplate(list)).data("level", level + 1);
+                        if (list.length > 0) {
+                            pb_div_tab.find("span:eq(0)").addClass("active");
+                        }
+                    } else {
+
+                    }
+
+                    if (referencemode == "1" && url && url.length > 0) {
+                        if (url.indexOf("http") >= 0 || url.indexOf("www") >= 0) {
+
+                        } else {
+                            url = "../" + url;
+                        }
+                        pb_iframe.css("opacity", 0).attr("src", url);
+                    }
+                });
+
+                //设备点击事件
+                $("#pb_div_tab").on("click", "span", function () {
+                    var obj = $(this);
+                    var id = obj.data("id");
+                    var pid = obj.data("pid");
+                    var mode = obj.data("mode");
+                    var url = obj.data("url") || "";
+                    var referencemode = obj.data("referencemode");
+                    var pb_div_floorinfo_detail = $('#pb_div_floorinfo_detail');
+                    var pb_div_tab = $('#pb_div_tab');
+                    var level = parseInt(pb_div_tab.data("level"));
+                    pb_div_tab.find("span").removeClass("active");
+                    obj.addClass("active");
+                    initFloorAndTab("pb_div_tab");
+
+
+                    var list = JSLINQ(_surperMenuObjAll).Where(function (n) { return n.ParentID == id; }).ToArray();
+                    if (mode == "1") {
+                        var myTemplate = Handlebars.compile($("#template_pb_div_floorinfo_detail").html());
+                        pb_div_floorinfo_detail.html(myTemplate(list)).data("level", level + 1);
+                        $("#pb_div_floor_current").text("");
+                        if (list.length > 0) {
+                            $("#pb_div_floor_current").text(list[0].Name);
+                            pb_div_floorinfo_detail.find("span:eq(0)").addClass("active");
+                        }
+                        $("#pb_div_floor").show();
+                    } else if (mode == "2") {
+                        var myTemplate = Handlebars.compile($("#template_pb_div_tab").html());
+                        pb_div_tab.html(myTemplate(list)).data("level", level + 1);
+                        if (list.length > 0) {
+                            pb_div_tab.find("span:eq(0)").addClass("active");
+                        }
+                    } else {
+
+                    }
+                    if (referencemode == "1" && url && url.length > 0) {
+                        if (url.indexOf("http") >= 0 || url.indexOf("www") >= 0) {
+
+                        } else {
+                            url = "../" + url;
+                        }
+                        pb_iframe.css("opacity", 0).attr("src", url).hide().css("opacity", 1);
+                    }
+                });
+
+                //点击页面其他元素，关闭楼层菜单
+                $("body").bind("mousedown", function (event) {
+                    if ((!(event.target.id == "pb_div_floorinfo")) && $("#pb_div_floorinfo").is(":visible")) {
+                        $("#pb_div_floorinfo_close").click();
+                    }
+                }).bind("mousewheel", function (event) {
+                    if ($("#pb_div_floorinfo").is(":visible")) {
+                        $("#pb_div_floorinfo_close").click();
+                    }
+                });
+
+                //折叠菜单
+                $("#pb_fold").click(function () {
+                    var pb_rightMain = $(".pb_rightMain");
+                    var arrow = $("#pb_fold>.arrow");
+                    var speed = 200;
+                    var easing = "swing";
+
+                    var status = pb_leftmenu_div.data("status") || "open";
+                    if (status === "open") {
+                        pb_leftmenu_div.animate({ left: -170 }, speed, easing);
+                        pb_rightMain.animate({ marginLeft: 0 }, speed, easing);
+                        pb_leftmenu_div.data("status", "close");
+                        arrow.removeClass("arrow-left").addClass("arrow-right");
+                    } else {
+                        pb_leftmenu_div.animate({ left: 0 }, speed, easing);
+                        pb_rightMain.animate({ marginLeft: 170 }, speed, easing);
+                        pb_leftmenu_div.data("status", "open");
+                        arrow.removeClass("arrow-right").addClass("arrow-left");
+                    }
+                });
+
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                $("#pb_iframe").addClass("animated");
+                $("#pb_iframe").load(function(){
+                    $("#pb_iframe").css("opacity", 1).show().addClass("bounceInDown").one(animationEnd, function () {
+                        $("#pb_iframe").removeClass("bounceInDown");
+                    });
+                });
+            };
+
+            //权限过滤1（过滤_surperMenuObjAll数据）
+            var _surperMenuObjAll_permission = [];
+            permissionFilter1 = function (ids) {
+                $.each(ids, function (i, n) {
+                    var obj = JSLINQ(_surperMenuObjAll).Where(function (m) { return m.ID == n.ID; }).FirstOrDefault();
+                    _surperMenuObjAll_permission.push(obj);
+                    if (n.subIDs !== null && n.subIDs.length > 0) {
+                        permissionFilter1(n.subIDs);
+                    }
+                });
+            };
+
+            //权限过滤2（过滤_surperMenuObj数据）
+            permissionFilter2 = function (ids) {
+                var data = [];
+                $.each(ids, function (i, n) {
+                    var obj = JSLINQ(_surperMenuObjAll).Where(function (m) { return m.ID == n.ID; }).FirstOrDefault();
+                    if (n.subIDs !== null && n.subIDs.length > 0) {
+                        obj.SurperMenus = permissionFilter2(n.subIDs);
+                    }
+                    data.push(obj);
+                });
+                return data;
+            };
+
+            //初始化
+            var _init = function (ids) {
+                if (ids !== undefined) {
+                    //一级权限过滤
+                    permissionFilter1(ids);
+                    _surperMenuObjAll = _surperMenuObjAll_permission;
+                    //二级权限过滤
+                    _surperMenuObj = permissionFilter2(ids);
+                }
+                initElement();
+                initEvent();
+
+                //初始化菜单
+                var myTemplate = Handlebars.compile($("#template_left_menu").html());
+                Handlebars.registerHelper("imgSrc", function (value) {
+                    if (value !== null && value.length > 0) {
+                        return "src='../Resource/Images/" + value + "'";
+                    }
+                    return null;
+                });
+                $('#pb_leftmenu').html(myTemplate(_surperMenuObj));
+
+                pb_leftmenu_div.rollbar({ wheelSpeed: 80, sliderOpacity: 0.1 });
+            };
+
+            var GetSystemMonitoringMenu = function () {
+                $.ajax({
+                    type: "get",
+                    url: systemMonitoringMenuURL,
+                    data: {},
+                    cache: false,
+                    dataType: "json",
+                    success: function (result) {
+                        if (result.HasError === true) {
+                            alert(result.Error);
+                            console.log(result.Error);
+                        } else {
+                            _init(result.Entity.List);
+                        }
+                    }, error: function () {
+                        alert("获取授权的系统监控菜单数据失败，无法加载页面。");
+                    }
+                });
+            };
+
+            var Result = {
+                init: function (showFold, configObj) {
+                    if (_surperMenuObj === undefined || _surperMenuObj === null || _surperMenuObj.length === 0) {
+                        return;
+                    }
+                    if (showFold !== undefined) {
+                        _showFold = showFold;
+                    }
+                    if (configObj !== undefined && configObj !== null) {
+                        authorizationToken = configObj.authorizationToken;
+                        systemMonitoringMenuURL = configObj.systemMonitoringMenuURL;
+                        $.ajaxSetup({
+                            headers: {
+                                Authorization: authorizationToken
+                            }
+                        });
+                    }
+                    if (_projectObj.ProjectInfo.EnabledControlPermission === true) {
+                        //需要全新验证，获取授权菜单
+                        GetSystemMonitoringMenu();
+                    } else {
+                        //无需权限验证，直接初始化
+                        _init();
+                    }
+                },
+                menuShow: function (isShow) {
+                    if (isShow === true) {
+                        pb_leftmenu_div.data("status", "close");
+                        $("#pb_fold").click();
+                    } else if (isShow === false) {
+                        pb_leftmenu_div.data("status", "open");
+                        $("#pb_fold").click();
+                    } else {
+                        $("#pb_fold").click();
+                    }
+                }
+            };
+            return Result;
+        })();
+
+        $(function () {
+            var config = getUrlParam("config") || "";
+            if (config.length > 0) {
+                var configObj = JSON.parse(decodeURIComponent(config));
+                pb_home.init(false, configObj);
+            } else {
+                pb_home.init(false);
+            }
+        });
+
+    </script>
+    <script type="text/x-handlebars-template" id="template_left_menu">
+        <ul>
+            {{#each this}}
+            <li>
+                <a>
+                    {{Name}}
+                </a>
+                {{#if SurperMenus}}
+                <ul>
+                    {{#with SurperMenus}}
+                    {{#each this}}
+                    <li>
+                        <a class="pb_leftmenu_level2" data-id="{{ID}}" data-pid="{{ParentID}}" data-referencemode="{{ReferenceMode}}" data-url="{{ReferenceURL}}" data-mode="{{Mode}}">
+                            <img {{{imgSrc Icon}}} />{{Name}}
+                        </a>
+                    </li>
+                    {{/each}}
+                    {{/with}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" id="template_pb_div_floorinfo_detail">
+        {{#each this}}
+        <span data-id="{{ID}}" data-pid="{{ParentID}}" data-referencemode="{{ReferenceMode}}" data-url="{{ReferenceURL}}" data-mode="{{Mode}}" data-bname="{{Name}}">{{Name}}</span>
+        {{/each}}
+    </script>
+    <script type="text/x-handlebars-template" id="template_pb_div_tab">
+        {{#each this}}
+        <span data-id="{{ID}}" data-pid="{{ParentID}}" data-referencemode="{{ReferenceMode}}" data-url="{{ReferenceURL}}" data-mode="{{Mode}}">{{Name}}</span>
+        {{/each}}
+    </script>
+</head>
+
+<body>
+    <div class="pb_leftmenu_div" id="pb_leftmenu_div">
+        <div class="pb_leftmenu" id="pb_leftmenu">
+
+        </div>
+    </div>
+    <div class="pb_rightMain">
+        <div class="pb_div_iframe">
+            <iframe id="pb_iframe"></iframe>
+            <div class="pb_div_iframe_div"></div>
+        </div>
+        <div class="pb_div_tab" id="pb_div_tab">
+        </div>
+        <div class="pb_div_floor" id="pb_div_floor">
+            <div><span id="pb_div_floor_current"></span></div>
+            <div>切换<span></span></div>
+        </div>
+        <div class="pb_div_floorinfo" id="pb_div_floorinfo">
+            <div class="pb_div_floorinfo_title">
+                列表
+                <span class="pb_div_floorinfo_close" id="pb_div_floorinfo_close">×</span>
+            </div>
+            <div class="pb_div_floorinfo_detail" id="pb_div_floorinfo_detail">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pb_fold" id="pb_fold">
+        <span class="arrow arrow-left" style="margin-top: 3px;margin-left: 3px;"></span>
+    </div>
+</body>
+
+</html>

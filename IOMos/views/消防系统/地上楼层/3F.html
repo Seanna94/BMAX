@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link href="../../Resource/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Resource/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../Resource/Content/core/PageBuilderPreview.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="../../Resource/Content/js/html5shiv.min.js"></script>
+        <script src="../../Resource/Content/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../Resource/Content/js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/juery.topbar.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/core/common.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/core/business.js"></script>
+
+    <script type="text/javascript" src="../../Resource/Content/core/PageBuilderHTConfig.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/ht.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/ht-live.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/js/ht-htmlnode.js"></script>
+
+    <script type="text/javascript" src="../../Resource/Content/js/browser.js"></script>
+    <!--自定义脚本-->
+    <script type="text/javascript" src="../../Resource/Content/core/PageBuilderPreview.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/core/PageBuilderControl.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/core/PageBuilderWebSocket.js"></script>
+    <script type="text/javascript" src="../../Resource/Content/core/PageBuilderLenged.js"></script>
+
+    <!--报警-->
+    <script type="text/javascript" src="/CameraResource/CameraResource.js"></script>
+    <!--占位脚本-->
+    <script type="text/javascript" src="../../Resource/Content/core/projectInfo.js"></script>
+    <script type="text/javascript" src="3F.js"></script>
+    <style>
+        body {
+            background-color: rgba(0,0,0,0);
+            -moz-user-select: none; /*mozilar*/
+            -webkit-user-select: none; /*webkit*/
+            -ms-user-select: none; /*IE*/
+            user-select: none;
+        }
+    </style>
+    <script>
+        // function connectWebSocket(func) {
+        //     PageBuilderWebSocket.connectSocketServer(_projectObj.ProjectInfo.WebSocketAddress, function () {
+        //         if (func != undefined) {
+        //             func();
+        //         }
+        //     }, function () {
+        //         JMessage("[实时数据] 通信连接断开,请检查网络或底层服务状态。", true);
+        //     });
+        // }
+
+        function getTagData() {
+            //获取当前页面需订阅的点ID
+            var tagIDs = [];
+            PageBuilderPreview.dataModel.getDatas().each(function (item, i) {
+                var nodeInfo = item.a("nodeInfo");
+                if (nodeInfo.tagID !== undefined && nodeInfo.tagID.length !== 0) {
+                    tagIDs.push(nodeInfo.tagID);
+                }
+            });
+            tagIDs = tagIDs.unique();
+            PageBuilderWebSocket.getTagData(tagIDs, function (data) {
+                PageBuilderControl.notice(data);
+            });
+        }
+
+        function pageReSize() {
+            $("#previewproject_content").height(document.documentElement.clientHeight);
+        }
+
+
+        $(function () {
+            window.addEventListener("resize", function (e) {
+                pageReSize();
+            });
+            pageReSize();
+
+
+
+            //---------项目文件初始化-----------
+            var pbpd = new PageBuilderPreviewDefault();
+            pbpd.useToolUrl = false;
+            pbpd.enableEdit = false;
+            pbpd.projectID = _projectObj.ID;
+            pbpd.htmlContainer = "#previewproject_content";
+            pbpd.enabledControl = true;
+            PageBuilderPreview.project = _projectObj;
+            PageBuilderPreview.init(pbpd);
+            PageBuilderPreview.graph.isMovable = function (data) {
+                return false;
+            };
+            PageBuilderPreview.lockCanvas(false);
+
+            //---------页面文件初始化-------------
+            PageBuilderPreview.currentPageInfo = _pageInfo;
+            if (PageBuilderPreview.currentPageInfo.PageInfoType === "page") {
+                //加载页面数据
+                PageBuilderPreview.pageLoad();
+            } else if (PageBuilderPreview.currentPageInfo.PageInfoType === "folder") {
+                PageBuilderPreview.clearCanvas(true);
+            }
+
+
+            //图例控件初始化
+            PageBuilderLenged.init({
+                container: "#_widget_placeholder",
+                dataModel: PageBuilderPreview.dataModel,
+                enabledEvent: true
+            });
+
+            if (PageBuilderPreview.currentPageInfo.LegendJSON !== null) {
+                PageBuilderLenged.bindData(JSON.parse(PageBuilderPreview.currentPageInfo.LegendJSON));
+            }
+
+            //----------连接websocket------------
+            connectWebSocket(function () {
+                getTagData();
+            });
+
+            //----------初始化授权信息-----------
+            if (PageBuilderPreview.project.ProjectInfo.EnabledControlPermission === true) {
+                var authorizationToken = $.QueryString("authorizationToken");
+                if (authorizationToken === undefined || authorizationToken === null || authorizationToken.length === 0) {
+                    return;
+                }
+
+                $.ajaxSetup({
+                    headers: {
+                        Authorization: "bearer " + authorizationToken
+                    }
+                });
+            }
+        });
+
+
+    </script>
+</head>
+<body>
+    <div id="previewproject_content" style="overflow:hidden">
+        <div id="pb_control_main" style="width:60px;position:absolute;right:50px;bottom:80px;z-index:1;display:none;opacity:0.2">
+            <div class="arrows_bg">
+                <div class="arrows arrows_top" at="top" style="position:absolute;left:20px;top:0px"></div>
+                <div class="arrows arrows_right" at="rigth" style="position:absolute;right:0px;top:20px;"></div>
+                <div class="arrows arrows_bottom" at="bottom" style="position:absolute;left:20px;bottom:0px"></div>
+                <div class="arrows arrows_left" at="left" style="position:absolute;left:0px;top:20px"></div>
+            </div>
+            <div style="text-align:center;">
+                <div class="arrows_zoom" id="arrows_zoomIn">+</div>
+                <div class="arrows_zoom" id="arrows_zoomOut">-</div>
+                <div class="arrows_zoom" id="pb_control_reset">
+                    <div style="width:10px;height:10px;background-color:#a6a6a6;border-radius:10px;margin:7px auto auto auto"></div>
+                </div>
+            </div>
+        </div>
+        <div id="_widget_placeholder"></div>
+    </div>
+    <div id="alert"></div>
+    <div id="jmessage" style="z-index: 9999; display: none;"></div>
+    <!--删除标记，次div后不应该放任何代码和资源引用，每次页面跳转后会有脚本清理该div后生成的所有无用代码。-->
+    <div id="divClearTag"></div>
+</body>
+</html>
+

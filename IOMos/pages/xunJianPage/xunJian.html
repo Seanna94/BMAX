@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巡检管理</title>
+    <!-- jQuery 2.2.0 -->
+    <script src="../../plugins/jQuery/jQuery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/app.min.js"></script>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 3.3.6 -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
+    <link href="https://cdn.bootcss.com/animate.css/3.3.1/animate.min.css" rel="stylesheet">
+    <link rel="text/javascript" href="../../plugins/jQuery/jquery.js">
+</head>
+<body class="hold-transition skin-blue sidebar-mini" style=" height:100%; padding: 0; margin: 0;">
+<header class="main-header" id="_layout_header">
+    <a href="../../login.html" class="logo">
+        <span class="logo-mini"><b>IOM</b></span>
+        <span class="logo-lg"><b>IOMos</b></span>
+    </a>
+    <nav class="navbar">
+        <!--data-toggle="offcanvas"添加到下面的a标签可以实现左边栏的动态效果-->
+        <a href="#" class="sidebar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="collapse navbar-collapse pull-left" id="gongneng">
+            <ul class="nav navbar-nav topmenu">
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../page/xtjk.html" class="animated">运维总览</a></li>
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../page/index1.html" class="animated">系统集成</a></li>
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../gongdanPage/gongDan.html" class="animated">工单管理</a></li>
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../ziChanPage/ziChanPage.html" class="animated">资产管理</a></li>
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../xunJianPage/xunJian.html" class="animated">巡检管理</a></li>
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../renYuanPage/renYuan.html" class="animated">人员管理</a></li>
+                <li><a onmousemove="big(this)" onmouseout="normal(this)"
+                       href="../zhiShiKu/zhiShiKu.html" class="animated">专家知识库</a></li>
+            </ul>
+        </div>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                    <a id="link_operationCenter" href="#" class="dropdown-toggle animated" data-toggle="dropdown">
+                    </a>
+                </li>
+
+                <li>
+                    <a id="link_project" title="XX运维管理平台">XX运维管理平台</a>
+                </li>
+
+                <li class="dropdown notifications-menu" style="" id="_layout_alarm_notification">
+                    <a href="#" class="dropdown-toggle animated" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-danger" id="_layout_alarm_sumCount">0</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header" id="_layout_alarm_sumCount2">你有0条系统报警信息</li>
+                        <li>
+                            <div class="slimScrollDiv">
+                                <ul class="menu" id="_layout_alarm_list"></ul><div class="slimScrollBar"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                        </li>
+                        <li class="footer"><a id="_layout_show_allAlarm" href="#" pagetitle="{{Page_Alarm_Title_List}}" frame_href="#">查看全部</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle animated" data-toggle="dropdown">
+                        <img src="../../img/a.jpg" id="page_layout_userHead1" class="user-image" onerror="this.src ='img/a.jpg'">
+                        <span class="hidden-xs" id="page_layout_userName_top">admin</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="user-header">
+                            <img src="../../img/a.jpg" id="page_layout_userHead2" class="img-circle" onerror="this.src ='img/a.jpg'">
+                            <p>
+                                <label id="page_layout_userName_top2">admin</label>
+                                <small id="page_layout_userName_roleName" title="项目管理员">项目管理员</small>
+                            </p>a
+                        </li>
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a class="btn btn-default btn-flat btn-sm" myboxup="myboxup_12" id="page_layout_userCenter" pagetitle="个人中心" frame_href="/BMAX/Home/MainFrameTab?url=http://127.0.0.1:9000/BCore/Home/FramePage?FrameUrl=/BCore/User/User/MyCenter">个人中心</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="#" class="btn btn-default btn-flat">退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="control-sidebar" class="animated"><i class="fa fa-gears"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<aside class="main-sidebar">
+    <section class="sidebar" style="height: 849px;width: auto;overflow-y: auto;overflow-x: hidden"id="scro">
+        <ul class="sidebar-menu"  id="_frame_left_menu">
+            <li class="header" style="text-align: center;color: #eee;font-size: 16px;">巡检管理</li>
+            <li class="treeview" onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated"href="xunJianDian.html" target="center_main" pagetitle="巡检点" >
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <span>巡检点</span>
+                </a>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="jiHua.html" target="center_main" pagetitle="巡检计划">
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-users"></i>
+                    <span>巡检计划</span>
+                </a>
+            </li>
+            <li class="treeview"  onmousemove="big(this)" onmouseout="normal(this)">
+                <a class="animated" href="renWu.html"  target="center_main" pagetitle="巡检任务" >
+                    <span class="pull-right-container"> </span>
+                    <i class="fa fa-cubes"></i>
+                    <span>巡检任务</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+<iframe class="content-wrapper" id="center" name="center_main" style="display: block;"
+        frameborder="0" scrolling="no" marginheight="100%" marginwidth="100%"
+        height="100%" onload="changeFrameWidth()" src="zhuYeMian.html">
+</iframe>
+<script src="../../js/index.js"></script>
+</body>
+</html>

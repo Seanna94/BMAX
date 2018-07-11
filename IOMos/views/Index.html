@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <script type="text/javascript" src="Resource/Content/core/projectInfo.js"></script>
+    <script>
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r !== null) return (r[2]); return null;
+        }
+
+        function loadHomePage() {
+            var config = getUrlParam("config") || "";
+            switch (_projectObj.ProjectInfo.HomePageIndex) {
+                case 0:
+                    location.href = "Home/home.html?config=" + config;
+                    break;
+                case 1:
+                    location.href = "Home/home1.html?config=" + config;
+                    break;
+                default:
+                    location.href = "Home/home.html?config=" + config;
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body onload="loadHomePage()">
+</body>
+
+</html>
