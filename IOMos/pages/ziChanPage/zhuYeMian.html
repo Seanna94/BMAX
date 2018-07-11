@@ -13,7 +13,7 @@
 </head>
 <body style="background-color: #edf1f5 ;height: 100% ;margin-left: 13px;margin-right: 13px">
 <div class="margin" >
-    <button type="button" class="btn btn-info">知识库概览</button>
+    <button type="button" class="btn btn-info">资产概览</button>
 </div>
 <div class="row" id="page_alarm_alarm_index">
     <div class="col-xs-12">
@@ -23,7 +23,7 @@
                     <div class="info-box">
                         <span class="info-box-icon bg-red"><i class="glyphicon glyphicon-fire home_icon"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">标准系统</span>
+                            <span class="info-box-text">设备台账</span>
                             <span class="info-box-number" id="page_home_index_alarm_today_UnHandleCount">12</span>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="info-box">
                         <span class="info-box-icon bg-yellow"><i class="glyphicon glyphicon-fire home_icon"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">故障代码</span>
+                            <span class="info-box-text">保养任务</span>
                             <span class="info-box-number">8</span>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                     <div class="info-box">
                         <span class="info-box-icon bg-green"><i class="glyphicon glyphicon-fire home_icon"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">巡检手册</span>
+                            <span class="info-box-text">设备保养</span>
                             <span class="info-box-number">13</span>
                         </div>
                     </div>
@@ -84,107 +84,104 @@
 <div class="col-xs-12">
     <div class="box box-info">
         <div class="box-header with-border">
-            <i class="fa fa-angle-double-right text-blue"></i><h3 class="box-title text-blue">系统列表</h3>
+            <i class="fa fa-angle-double-right text-blue"></i><h3 class="box-title text-blue">设备保养标准</h3>
         </div>
+        <div class="modal fade" id="delte" tabindex="-1" role="dialog" aria-labelledby="up" aria-hidden="true">
+            <div class="modal-dialog" style="width: 400px">
+                <div class="modal-content">
+                    <div class="modal-header with-border">
+                        <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue">删除保养中的设备</span>
+                    </div>
+                    <div class="modal-body">确定删除吗？</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width: 650px">
+                <div class="modal-content">
+                    <div class="modal-header with-border">
+                        <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue">添加保养周期</span>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="2">保养周期</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="2" placeholder="保养周期">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="3">保养手册</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" type="text" id="3" placeholder="保养手册">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" id="add" class="btn btn-primary" data-dismiss="modal">添加</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-body">
             <div class="row margin">
                 <div class="col-lg-12 col-md-12">
-                    <table class="table table-hover">
+                    <table class="table table-hover text-center">
                         <thead>
                         <tr class="bg-aqua">
-                            <th>编号</th>
-                            <th>类别</th>
-                            <th>设备名称</th>
-                            <th>类别</th>
-                            <th>重要程度</th>
-                            <th>父级</th>
-                            <th>描述</th>
+                            <th>保养周期</th>
+                            <th>保养手册</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tr>
-                            <td>1</td>
-                            <td>001</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-ADS-000</td>
-                            <td>C类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统-风管</td>
-                            <td>标准型号：MODEL</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
+                            <td>4周</td>
+                            <td>《空调保养手册》</td>
+                            <td><a data-toggle="modal" data-target="#myModal">添加保养周期</a>
+                                <a data-toggle="modal" data-target="#delte">删除保养标准</a></td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>002</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-ADV-000-001</td>
-                            <td>A类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统-风阀-国产</td>
-                            <td>标准型号：MODEL</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
+                        <tr>
+                            <td>2周</td>
+                            <td>《扶梯保养手册》</td>
+                            <td><a data-toggle="modal" data-target="#myModal">添加保养周期</a>
+                                <a data-toggle="modal" data-target="#delte">删除保养标准</a></td>
+                        </tr>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>000</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-ADV-000-001</td>
-                            <td>C类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统-风阀</td>
-                            <td>标准型号：MODEL</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
+                        <tr>
+                            <td>1周</td>
+                            <td>《直梯保养手册》</td>
+                            <td><a data-toggle="modal" data-target="#myModal">添加保养周期</a>
+                                <a data-toggle="modal" data-target="#delte">删除保养标准</a></td>
+                        </tr>
                         </tr>
                         <tr>
-                            <td>4</td>
-                            <td>AO</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-AO</td>
-                            <td>A类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统</td>
-                            <td>送出风口</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
+                            <td>6周</td>
+                            <td>《加湿器保养手册》</td>
+                            <td><a data-toggle="modal" data-target="#myModal">添加保养周期</a>
+                                <a data-toggle="modal" data-target="#delte">删除保养标准</a></td>
                         </tr>
                         <tr>
-                            <td>5</td>
-                            <td>AO</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-ARV</td>
-                            <td>C类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统</td>
-                            <td>风量调节阀</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>001</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-AO</td>
-                            <td>A类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统-风量控制器-国产</td>
-                            <td>标准型号</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>AO</td>
-                            <td>标准型号：MODEL</td>
-                            <td>AC-AP-AAD-ERG-000-001</td>
-                            <td>A类设备</td>
-                            <td>空调系统-空气处理系统-空气管道系统-送排风口-国产</td>
-                            <td>标准型号</td>
-                            <td><a data-toggle="modal" data-target="#delete">删除</a>
-                            </td>
+                            <td>8周</td>
+                            <td>《声控灯保养手册》</td>
+                            <td><a data-toggle="modal" data-target="#myModal">添加保养周期</a>
+                                <a data-toggle="modal" data-target="#delte">删除保养标准</a></td>
                         </tr>
                     </table>
-
+                </div>
+            </div>
             <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="up" aria-hidden="true">
                 <div class="modal-dialog" style="width: 400px">
                     <div class="modal-content">
                         <div class="modal-header with-border">
-                            <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue" id="del">删除联动配置</span>
+                            <i class="fa fa-angle-double-right text-blue"></i><span class="box-title text-blue" id="del">删除台账</span>
                         </div>
                         <div class="modal-body">确定删除吗？</div>
                         <div class="modal-footer">
@@ -195,8 +192,9 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
-                显示第1到第7条记录，总共7条记录，每页显示
+                显示第1到第5条记录，总共15条记录，每页显示
                 <select>
+                    <option value="10">5</option>
                     <option value="301">10</option>
                     <option value="302">20</option>
                     <option value="303">40</option>
@@ -213,15 +211,14 @@
                 </ul>
             </div>
         </div>
-            </div>
     </div>
 </div>
 <script>
     var data = {
         labels: [
-            "标准系统",
-            "故障代码",
-            "巡检手册"
+            "设备台账",
+            "保养任务",
+            "设备保养"
         ],
         datasets: [
             {
